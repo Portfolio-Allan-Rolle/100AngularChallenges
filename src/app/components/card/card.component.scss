@@ -1,0 +1,44 @@
+.card {
+  $parent: &;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  max-width: 320px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+
+  @media screen and (max-width: 320px) {
+    margin: 10px 0 0 0;
+  }
+
+  &_header {
+    background-color: #b3ecff;
+    padding: 3px 8px;
+  }
+
+  &_title {
+    margin-left: 10px;
+  }
+
+  &_container {
+    > * {
+      margin-top: 5px;
+    }
+  }
+
+  &::ng-deep {
+    #{$parent}_list {
+      li {
+        margin-top: 5px;
+        font-style: italic;
+      }
+    }
+  }
+
+  &:hover {
+    @media screen and (min-width: 1200px) {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+}

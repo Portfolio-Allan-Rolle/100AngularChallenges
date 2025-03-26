@@ -11,4 +11,5 @@ Lien pour visualiser le projet dans la description à droite ➡️
 
 ## Challenges
 
-1. Build a basic toolbar component that renders out the content nested within it and a title passed in
+1. Build a basic toolbar component that renders out the content nested within it and a title passed in.
+2. Build a basic card component that takes in an icon, title & subtitle.
