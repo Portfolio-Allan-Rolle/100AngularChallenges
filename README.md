@@ -1,7 +1,10 @@
 # 100 Angular Challenges
 
 100 Challenges to learn Angular
-Udemy course by Dylan Israel
+
+Based on the Udemy course by Dylan Israel
+
+
 Get the course [here](https://www.udemy.com/course/100-angular-challenge/) !
 
 Lien pour visualiser le projet dans la description à droite ➡️
