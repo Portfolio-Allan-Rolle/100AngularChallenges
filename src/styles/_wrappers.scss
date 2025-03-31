@@ -1,0 +1,11 @@
+.wrapper {
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  &::before {
+    content: "\26C9 Component";
+    font-size: 10px;
+    color: #1c708c;
+  }
+}

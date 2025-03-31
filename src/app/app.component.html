@@ -1,7 +1,16 @@
 <app-toolbar [title]="'100 Angular Challenges'"></app-toolbar>
-<app-card [name]="'Allan'" [job]="'Front-End Developer'">
-  <p>CDI</p>
-</app-card>
-<app-card [name]="'Chris'" [job]="'Back-End Developer'">
-  <p>Freelance</p>
-</app-card>
+<main>
+  <div class="wrapper">
+    <app-card [name]="'Allan'" [job]="'Front-End Developer'">
+      <p>CDI</p>
+    </app-card>
+  </div>
+  <div class="wrapper">
+    <app-card [name]="'Chris'" [job]="'Back-End Developer'">
+      <p>Freelance</p>
+    </app-card>
+  </div>
+  <div class="wrapper">
+    <app-accordion [items]="accordionItems"></app-accordion>
+  </div>
+</main>
