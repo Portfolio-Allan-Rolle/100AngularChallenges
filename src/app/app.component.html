@@ -13,4 +13,10 @@
   <div class="wrapper">
     <app-accordion [items]="accordionItems"></app-accordion>
   </div>
+  <div class="wrapper">
+    <app-progressbar
+      [valueNow]="progressBarValue()"
+      (onUpdate)="changeProgressBarValue()"
+    ></app-progressbar>
+  </div>
 </main>

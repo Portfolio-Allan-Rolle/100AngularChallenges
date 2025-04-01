@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { IAccordionItem } from './models';
+import { ProgressbarComponent } from './components/progressbar/progressbar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [ToolbarComponent, CardComponent, AccordionComponent],
+  imports: [
+    ToolbarComponent,
+    CardComponent,
+    AccordionComponent,
+    ProgressbarComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -28,4 +34,8 @@ export class AppComponent {
       isExpanded: false,
     },
   ];
+  public progressBarValue = signal(20);
+  changeProgressBarValue() {
+    this.progressBarValue.set(80);
+  }
 }

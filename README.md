@@ -14,4 +14,5 @@ Lien pour visualiser le projet dans la description à droite ➡️
 1. Build a basic toolbar component that renders out the content nested within it and a title passed in.
 2. Build a basic card component that takes in an icon, title & subtitle.
 3. Build an accordion component that takes in a list of accordion content (title & content).
+4. Build a progress bar component that takes in a value and defaults to a max of 100.
 

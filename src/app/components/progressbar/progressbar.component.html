@@ -1,0 +1,15 @@
+<div>
+  <label for="progress-bar">progress:</label>
+</div>
+<div class="progress">
+  <span
+    [ngStyle]="{'width.%': valueNow()}"
+    id="progress"
+    role="progressbar"
+    [attr.aria-valueNow]="valueNow()"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    class="progress_bar"
+  ></span>
+</div>
+<button (click)="update()">Update</button>
