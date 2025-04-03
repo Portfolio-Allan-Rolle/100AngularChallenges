@@ -4,6 +4,7 @@ import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { IAccordionItem } from './models';
 import { ProgressbarComponent } from './components/progressbar/progressbar.component';
+import { StarRatingComponent } from './components/star-rating/star-rating.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { ProgressbarComponent } from './components/progressbar/progressbar.compo
     CardComponent,
     AccordionComponent,
     ProgressbarComponent,
+    StarRatingComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

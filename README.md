@@ -15,4 +15,5 @@ Lien pour visualiser le projet dans la description à droite ➡️
 2. Build a basic card component that takes in an icon, title & subtitle.
 3. Build an accordion component that takes in a list of accordion content (title & content).
 4. Build a progress bar component that takes in a value and defaults to a max of 100.
+5. Build a stars rating component that takes up to 5 stars and includes half and empty stars.
 
