@@ -1,14 +1,39 @@
 import { Route } from '@angular/router';
-import { ComponentDocumentationComponent } from './routes/component-documentation/component-documentation.component';
-import { DirectivesDocumentationComponent } from './routes/directives-documentation/directives-documentation.component';
-import { ServicesDocumentationComponent } from './routes/services-documentation/services-documentation.component';
-import { PipesDocumentationComponent } from './routes/pipes-documentation/pipes-documentation.component';
-import { MiscellaneousDocumentationComponent } from './routes/miscellaneous-documentation/miscellaneous-documentation.component';
 
 export const routes: Route[] = [
-  { path: '', component: ComponentDocumentationComponent },
-  { path: 'directives', component: DirectivesDocumentationComponent },
-  { path: 'services', component: ServicesDocumentationComponent },
-  { path: 'pipes', component: PipesDocumentationComponent },
-  { path: 'miscellaneous', component: MiscellaneousDocumentationComponent },
+  {
+    path: '',
+    loadComponent: () =>
+      import(
+        './routes/component-documentation/component-documentation.component'
+      ).then((m) => m.ComponentDocumentationComponent),
+  },
+  {
+    path: 'directives',
+    loadComponent: () =>
+      import(
+        './routes/directives-documentation/directives-documentation.component'
+      ).then((m) => m.DirectivesDocumentationComponent),
+  },
+  {
+    path: 'services',
+    loadComponent: () =>
+      import(
+        './routes/services-documentation/services-documentation.component'
+      ).then((m) => m.ServicesDocumentationComponent),
+  },
+  {
+    path: 'pipes',
+    loadComponent: () =>
+      import('./routes/pipes-documentation/pipes-documentation.component').then(
+        (m) => m.PipesDocumentationComponent
+      ),
+  },
+  {
+    path: 'miscellaneous',
+    loadComponent: () =>
+      import(
+        './routes/miscellaneous-documentation/miscellaneous-documentation.component'
+      ).then((m) => m.MiscellaneousDocumentationComponent),
+  },
 ];
