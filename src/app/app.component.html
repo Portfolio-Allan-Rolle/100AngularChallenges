@@ -1,28 +1,4 @@
 <app-toolbar [title]="'100 Angular Challenges'"></app-toolbar>
 <main>
-  <div class="wrapper">
-    <app-card [name]="'Allan'" [job]="'Front-End Developer'">
-      <p>CDI</p>
-    </app-card>
-  </div>
-  <div class="wrapper">
-    <app-card [name]="'Chris'" [job]="'Back-End Developer'">
-      <p>Freelance</p>
-    </app-card>
-  </div>
-  <div class="wrapper">
-    <app-accordion [items]="accordionItems"></app-accordion>
-  </div>
-  <div class="wrapper">
-    <app-progressbar
-      [valueNow]="progressBarValue()"
-      (onUpdate)="changeProgressBarValue()"
-    ></app-progressbar>
-  </div>
-  <div class="wrapper">
-    <app-star-rating [reviewNumber]="3.5"></app-star-rating>
-  </div>
-  <div class="wrapper">
-    <app-top-of-page [distanceFromTopOfPage]="50"></app-top-of-page>
-  </div>
+    <router-outlet></router-outlet>
 </main>
