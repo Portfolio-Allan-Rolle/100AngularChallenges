@@ -19,5 +19,6 @@ Lien pour visualiser le projet dans la description à droite ➡️
 6. Build a top of page component that is displays when pass the 400px and brings to top of the page.
 7. Routing 
 8. Lazy loading routes
+9. Build a pipe that truncates text that is longer than 100 characters by default and appends '...'
 
 
