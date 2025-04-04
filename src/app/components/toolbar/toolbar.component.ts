@@ -1,5 +1,6 @@
-import { Component, input } from '@angular/core';
+import { Component, input, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { LoaderService } from '../../services/loader.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -8,5 +9,9 @@ import { RouterLink } from '@angular/router';
   styleUrl: './toolbar.component.scss',
 })
 export class ToolbarComponent {
+  loaderService = inject(LoaderService);
   title = input.required<string>();
+  showLoader() {
+    this.loaderService.showLoader();
+  }
 }
