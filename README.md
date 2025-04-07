@@ -20,3 +20,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 8. Lazy loading routes
 9. Build a pipe that truncates text that is longer than 100 characters by default and appends '...'
 10. Build a circular loader component that can be turn off and on and has an overlay with a blur effect.
+11. Build a card that takes in a credit card number as a string and return it dashed.

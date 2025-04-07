@@ -1,3 +1,15 @@
 <div class="wrapper-pipe">
   <p>{{ dataTruncatePipe | truncate }}</p>
 </div>
+
+<div class="wrapper-pipe">
+  <p>{{ creditCardNumber() | creditCardFormatter }}</p>
+  <br />
+  <button (click)="changeToValid()">Valid Credit Card Number</button>
+  <button (click)="changeToInvalidLength()">
+    Invalid Credit Card Number Length
+  </button>
+  <button (click)="changeToInvalidCaracters()">
+    Invalid Credit Card Number Caracters
+  </button>
+</div>
