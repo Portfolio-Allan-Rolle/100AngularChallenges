@@ -24,4 +24,16 @@
   <div class="wrapper">
     <app-top-of-page [distanceFromTopOfPage]="50"></app-top-of-page>
   </div>
+  <div class="wrapper">
+    <app-credit-card-input
+      [isReadOnly]="false"
+      [cardNumber]="'3234'"
+    ></app-credit-card-input>
+  </div>
+  <div class="wrapper">
+    <app-credit-card-input
+      [isReadOnly]="true"
+      [cardNumber]="'6234543215678987'"
+    ></app-credit-card-input>
+  </div>
 </div>

@@ -1,0 +1,10 @@
+<div>
+  <input
+    class="input"
+    type="text"
+    [ngClass]="cardBrand()"
+    [readonly]="isReadOnly()"
+    [value]="isReadOnly() ? cardNumberFormatted() : cardNumber()"
+    (input)="cardNumber.set($any($event.target).value)"
+  />
+</div>

@@ -5,6 +5,7 @@ import { ProgressbarComponent } from '../../components/progressbar/progressbar.c
 import { StarRatingComponent } from '../../components/star-rating/star-rating.component';
 import { TopOfPageComponent } from '../../components/top-of-page/top-of-page.component';
 import { IAccordionItem } from '../../models';
+import { CreditCardInputComponent } from '../../components/credit-card-input/credit-card-input.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -14,6 +15,7 @@ import { IAccordionItem } from '../../models';
     ProgressbarComponent,
     StarRatingComponent,
     TopOfPageComponent,
+    CreditCardInputComponent
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
