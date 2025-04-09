@@ -1,5 +1,5 @@
-import { Component, inject } from '@angular/core';
-import { LoaderService } from '../../services/loader.service';
+import { Component, inject, input } from '@angular/core';
+import { LoaderService, loaderType } from '../../services/loader.service';
 
 @Component({
   selector: 'app-loader',
@@ -10,6 +10,8 @@ import { LoaderService } from '../../services/loader.service';
 export class LoaderComponent {
   loaderService = inject(LoaderService);
   isLoaderVisible = this.loaderService.isLoaderVisible;
+  enum: typeof loaderType = loaderType;
+  loaderType = input(loaderType.CIRCULAR);
   hideLoader() {
     this.loaderService.hideLoader();
   }

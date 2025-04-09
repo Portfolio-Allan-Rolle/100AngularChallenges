@@ -1,5 +1,10 @@
 import { Injectable, signal } from '@angular/core';
 
+export enum loaderType {
+  CIRCULAR = 'CIRCULAR',
+  TEXT = 'TEXT',
+}
+
 @Injectable({
   providedIn: 'root',
 })

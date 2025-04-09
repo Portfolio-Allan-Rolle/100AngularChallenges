@@ -22,3 +22,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 10. Build a circular loader component that can be turn off and on and has an overlay with a blur effect.
 11. Build a card that takes in a credit card number as a string and return it dashed.
 12. Build a credit card input component that crosses out everything but last 4 digits and displays an icon.
+13. Expand the loader to accept an input to change its type: circular or loading.
