@@ -6,6 +6,7 @@ import { StarRatingComponent } from '../../components/star-rating/star-rating.co
 import { TopOfPageComponent } from '../../components/top-of-page/top-of-page.component';
 import { IAccordionItem } from '../../models';
 import { CreditCardInputComponent } from '../../components/credit-card-input/credit-card-input.component';
+import { TwitterPostComponent } from '../../components/twitter-post/twitter-post.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -15,7 +16,8 @@ import { CreditCardInputComponent } from '../../components/credit-card-input/cre
     ProgressbarComponent,
     StarRatingComponent,
     TopOfPageComponent,
-    CreditCardInputComponent
+    CreditCardInputComponent,
+    TwitterPostComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
