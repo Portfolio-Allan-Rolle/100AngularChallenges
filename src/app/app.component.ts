@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { LoaderComponent } from './components/loader/loader.component';
+
 import { RouterOutlet } from '@angular/router';
 
 @Component({
