@@ -26,3 +26,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 14. Build a Twitter post component that appends the title of the page, takes in hash tags and a base href.
 15. Build a LinkedIn post component that appends the current page on a hard coded url. 
 16. Build a flatten pipe that takes in an array of any values and flatten out to a single array. Make it impure. 
+17. Build a modal component

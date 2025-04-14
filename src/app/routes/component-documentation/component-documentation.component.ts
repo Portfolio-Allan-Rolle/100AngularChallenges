@@ -8,6 +8,7 @@ import { IAccordionItem } from '../../models';
 import { CreditCardInputComponent } from '../../components/credit-card-input/credit-card-input.component';
 import { TwitterPostComponent } from '../../components/twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from '../../components/linkedin-post/linkedin-post.component';
+import { ModalComponent } from "../../components/modal/modal.component";
 
 @Component({
   selector: 'app-component-documentation',
@@ -20,7 +21,8 @@ import { LinkedinPostComponent } from '../../components/linkedin-post/linkedin-p
     CreditCardInputComponent,
     TwitterPostComponent,
     LinkedinPostComponent,
-  ],
+    ModalComponent
+],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
 })
