@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { TruncatePipe } from '../../pipes/truncate.pipe';
 import { CreditCardFormatterPipe } from '../../pipes/credit-card-formatter.pipe';
+import { FlattenPipe } from '../../pipes/flatten.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
-  imports: [TruncatePipe, CreditCardFormatterPipe],
+  imports: [TruncatePipe, CreditCardFormatterPipe, FlattenPipe],
   templateUrl: './pipes-documentation.component.html',
   styleUrl: './pipes-documentation.component.scss',
 })
@@ -13,6 +14,8 @@ export class PipesDocumentationComponent {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar arcu at turpis molestie aliquam. Suspendisse imperdiet nisi eu n.';
 
   creditCardNumber = signal('98 7654321 5678987');
+
+  dataToFlatten = signal([1, 2, [3, 4], [5, 6, [7, 8]]]);
 
   changeToInvalidLength() {
     this.creditCardNumber.set('8888');
