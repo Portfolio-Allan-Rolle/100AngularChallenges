@@ -1,0 +1,28 @@
+.quote {
+  background: #d6d6d6;
+  padding: 25px 60px;
+  font-family: Garamond, serif;
+
+  &_block {
+    position: relative;
+    margin: 0 0 20px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: -45px;
+      content: "“";
+      font-size: 6rem;
+      color: #999;
+    }
+  }
+
+  &_caption {
+    position: relative;
+    text-align: right;
+    margin-right: 40px;
+    padding: 0 8px;
+    background: #d6d6d6;
+    z-index: 1;
+  }
+}

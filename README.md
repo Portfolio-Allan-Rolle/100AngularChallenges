@@ -24,6 +24,8 @@ Lien pour visualiser le projet dans la description à droite ➡️
 12. Build a credit card input component that crosses out everything but last 4 digits and displays an icon.
 13. Expand the loader to accept an input to change its type: circular or loading.
 14. Build a Twitter post component that appends the title of the page, takes in hash tags and a base href.
-15. Build a LinkedIn post component that appends the current page on a hard coded url. 
-16. Build a flatten pipe that takes in an array of any values and flatten out to a single array. Make it impure. 
+15. Build a LinkedIn post component that appends the current page on a hard coded url.
+16. Build a flatten pipe that takes in an array of any values and flatten out to a single array. Make it impure.
 17. Build a modal component
+18. Create a directive that debounces a click event for up to 500ms.
+19. Build a quote component that takes in a quote, author and occupation.

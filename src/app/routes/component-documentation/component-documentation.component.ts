@@ -8,7 +8,8 @@ import { IAccordionItem } from '../../models';
 import { CreditCardInputComponent } from '../../components/credit-card-input/credit-card-input.component';
 import { TwitterPostComponent } from '../../components/twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from '../../components/linkedin-post/linkedin-post.component';
-import { ModalComponent } from "../../components/modal/modal.component";
+import { ModalComponent } from '../../components/modal/modal.component';
+import { QuoteComponent } from '../../components/quote/quote.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -21,8 +22,9 @@ import { ModalComponent } from "../../components/modal/modal.component";
     CreditCardInputComponent,
     TwitterPostComponent,
     LinkedinPostComponent,
-    ModalComponent
-],
+    ModalComponent,
+    QuoteComponent,
+  ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
 })
@@ -48,4 +50,8 @@ export class ComponentDocumentationComponent {
   changeProgressBarValue() {
     this.progressBarValue.set(80);
   }
+  quote =
+    "I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best";
+  quoteAuthor = 'Marilyn Monroe';
+  quoteOccupation = 'Actress/Model';
 }

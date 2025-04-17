@@ -21,3 +21,15 @@
     color: #1c708c;
   }
 }
+
+.wrapper-directive {
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  &::before {
+    content: "\26C9 Directive";
+    font-size: 10px;
+    color: #1c708c;
+  }
+}
