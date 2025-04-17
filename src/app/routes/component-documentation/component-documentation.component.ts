@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 import { CardComponent } from '../../components/card/card.component';
 import { AccordionComponent } from '../../components/accordion/accordion.component';
 import { ProgressbarComponent } from '../../components/progressbar/progressbar.component';
@@ -10,6 +10,7 @@ import { TwitterPostComponent } from '../../components/twitter-post/twitter-post
 import { LinkedinPostComponent } from '../../components/linkedin-post/linkedin-post.component';
 import { ModalComponent } from '../../components/modal/modal.component';
 import { QuoteComponent } from '../../components/quote/quote.component';
+import { ToggleComponent } from '../../components/toggle/toggle.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -24,6 +25,7 @@ import { QuoteComponent } from '../../components/quote/quote.component';
     LinkedinPostComponent,
     ModalComponent,
     QuoteComponent,
+    ToggleComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',

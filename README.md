@@ -29,3 +29,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 17. Build a modal component
 18. Create a directive that debounces a click event for up to 500ms.
 19. Build a quote component that takes in a quote, author and occupation.
+20. Build a toggle component that takes in a value and has a smooth transition when changing.
