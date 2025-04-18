@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { TruncatePipe } from '../../pipes/truncate.pipe';
 import { CreditCardFormatterPipe } from '../../pipes/credit-card-formatter.pipe';
 import { FlattenPipe } from '../../pipes/flatten.pipe';
+import { FilterTermPipe } from '../../pipes/filter-term.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
-  imports: [TruncatePipe, CreditCardFormatterPipe, FlattenPipe],
+  imports: [TruncatePipe, CreditCardFormatterPipe, FlattenPipe, FilterTermPipe],
   templateUrl: './pipes-documentation.component.html',
   styleUrl: './pipes-documentation.component.scss',
 })
@@ -26,4 +27,24 @@ export class PipesDocumentationComponent {
   changeToValid() {
     this.creditCardNumber.set('5678998765432123');
   }
+
+  dataToFilter = [
+    'Hello World',
+    'ipsum',
+    'Hello WORLD',
+    'dolor',
+    'sit',
+    'Hello world',
+    'amet',
+    'A Whole new World',
+    'consectetur',
+    'I live in my own world',
+    'adipiscing',
+    'Love the World',
+    'elit',
+    'Nam',
+    'This world is mine',
+    'dapibus',
+    'I love this world',
+  ];
 }
