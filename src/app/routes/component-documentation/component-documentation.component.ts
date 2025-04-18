@@ -11,6 +11,7 @@ import { LinkedinPostComponent } from '../../components/linkedin-post/linkedin-p
 import { ModalComponent } from '../../components/modal/modal.component';
 import { QuoteComponent } from '../../components/quote/quote.component';
 import { ToggleComponent } from '../../components/toggle/toggle.component';
+import { RichTextViewerComponent } from '../../components/rich-text-viewer/rich-text-viewer.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -26,6 +27,7 @@ import { ToggleComponent } from '../../components/toggle/toggle.component';
     ModalComponent,
     QuoteComponent,
     ToggleComponent,
+    RichTextViewerComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',

@@ -30,4 +30,5 @@ Lien pour visualiser le projet dans la description à droite ➡️
 18. Create a directive that debounces a click event for up to 500ms.
 19. Build a quote component that takes in a quote, author and occupation.
 20. Build a toggle component that takes in a value and has a smooth transition when changing.
-21. Build a pipe that takes in an array of strings and filters it by a string. 
+21. Build a pipe that takes in an array of strings and filters it by a string.
+22. Build a rich text viewer component that strips outs the html when it is invalid.

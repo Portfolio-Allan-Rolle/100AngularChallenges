@@ -57,4 +57,16 @@
       <p>I am visible only when the toggle is on !</p>
     </app-toggle>
   </div>
+  <div class="wrapper">
+    <h5>Good Exemple</h5>
+    <app-rich-text-viewer
+      [html]="'<p>I am valid html</p>'"
+    ></app-rich-text-viewer>
+    <h5>Empty Exemple</h5>
+    <app-rich-text-viewer [html]="'<p></p>'"></app-rich-text-viewer>
+    <h5>Bad Exemple</h5>
+    <app-rich-text-viewer
+      [html]="'<strong>I am invalid'"
+    ></app-rich-text-viewer>
+  </div>
 </div>
