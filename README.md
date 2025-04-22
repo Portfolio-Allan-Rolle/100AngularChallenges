@@ -32,3 +32,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 20. Build a toggle component that takes in a value and has a smooth transition when changing.
 21. Build a pipe that takes in an array of strings and filters it by a string.
 22. Build a rich text viewer component that strips outs the html when it is invalid.
+23. Build a debounce search input that notifies the parent of its value updating every 250ms.

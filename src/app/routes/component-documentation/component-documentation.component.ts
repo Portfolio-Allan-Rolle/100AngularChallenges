@@ -12,6 +12,7 @@ import { ModalComponent } from '../../components/modal/modal.component';
 import { QuoteComponent } from '../../components/quote/quote.component';
 import { ToggleComponent } from '../../components/toggle/toggle.component';
 import { RichTextViewerComponent } from '../../components/rich-text-viewer/rich-text-viewer.component';
+import { DebounceSearchComponent } from '../../components/debounce-search/debounce-search.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -28,6 +29,7 @@ import { RichTextViewerComponent } from '../../components/rich-text-viewer/rich-
     QuoteComponent,
     ToggleComponent,
     RichTextViewerComponent,
+    DebounceSearchComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
@@ -58,4 +60,9 @@ export class ComponentDocumentationComponent {
     "I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best";
   quoteAuthor = 'Marilyn Monroe';
   quoteOccupation = 'Actress/Model';
+
+  debounceSearch = signal('');
+  onSearch(searchTerm: string) {
+    this.debounceSearch.set(searchTerm);
+  }
 }

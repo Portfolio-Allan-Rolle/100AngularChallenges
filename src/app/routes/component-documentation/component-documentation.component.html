@@ -1,5 +1,9 @@
 <div>
   <div class="wrapper">
+    <app-debounce-search (onDebounceSearch)="onSearch($event)"></app-debounce-search>
+    <p>Your searched for: {{ debounceSearch() }}</p>
+  </div>
+  <div class="wrapper">
     <app-card [name]="'Allan'" [job]="'Front-End Developer'">
       <p>CDI</p>
     </app-card>
