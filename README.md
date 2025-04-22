@@ -33,3 +33,5 @@ Lien pour visualiser le projet dans la description à droite ➡️
 21. Build a pipe that takes in an array of strings and filters it by a string.
 22. Build a rich text viewer component that strips outs the html when it is invalid.
 23. Build a debounce search input that notifies the parent of its value updating every 250ms.
+24. Build a search list component that displays a list of possible strings that matches a given string.
+

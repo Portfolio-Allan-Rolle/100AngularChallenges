@@ -1,4 +1,4 @@
-import { Component, input, signal } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CardComponent } from '../../components/card/card.component';
 import { AccordionComponent } from '../../components/accordion/accordion.component';
 import { ProgressbarComponent } from '../../components/progressbar/progressbar.component';
@@ -13,6 +13,7 @@ import { QuoteComponent } from '../../components/quote/quote.component';
 import { ToggleComponent } from '../../components/toggle/toggle.component';
 import { RichTextViewerComponent } from '../../components/rich-text-viewer/rich-text-viewer.component';
 import { DebounceSearchComponent } from '../../components/debounce-search/debounce-search.component';
+import { SearchListComponent } from '../../components/search-list/search-list.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -30,6 +31,7 @@ import { DebounceSearchComponent } from '../../components/debounce-search/deboun
     ToggleComponent,
     RichTextViewerComponent,
     DebounceSearchComponent,
+    SearchListComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
@@ -65,4 +67,6 @@ export class ComponentDocumentationComponent {
   onSearch(searchTerm: string) {
     this.debounceSearch.set(searchTerm);
   }
+
+  dataSearch = ['Firefox', 'Chrome', 'Edge', 'Safari', 'Opera', 'Brave'];
 }

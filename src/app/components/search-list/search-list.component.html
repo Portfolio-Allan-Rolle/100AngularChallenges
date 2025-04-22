@@ -1,0 +1,28 @@
+<div class="search">
+  <div class="search_top">
+    <label for="search-input">Search for a browser:</label>{{ term() }}<br />
+    <input
+      #input
+      id="search-input"
+      [value]="term()"
+      type="search"
+      placeholder="Search..."
+      (input)="term.set(input.value); showSearchResults.set(true)"
+      (change)="term.set(input.value); showSearchResults.set(true)"
+    />
+  </div>
+  <div class="search_bottom">
+    <ul class="search_list">
+      @for(item of dataSearch() | filterTerm:term(); track item) {
+      @if(showSearchResults()) {
+      <li
+        class="search_item"
+        (keyup)="onSearchItemSelection(item)"
+        (click)="onSearchItemSelection(item)"
+      >
+        {{ item }}
+      </li>
+      } }
+    </ul>
+  </div>
+</div>

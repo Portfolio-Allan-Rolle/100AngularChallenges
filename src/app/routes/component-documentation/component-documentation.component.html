@@ -1,6 +1,11 @@
 <div>
   <div class="wrapper">
-    <app-debounce-search (onDebounceSearch)="onSearch($event)"></app-debounce-search>
+    <app-search-list [dataSearch]="dataSearch"></app-search-list>
+  </div>
+  <div class="wrapper">
+    <app-debounce-search
+      (onDebounceSearch)="onSearch($event)"
+    ></app-debounce-search>
     <p>Your searched for: {{ debounceSearch() }}</p>
   </div>
   <div class="wrapper">

@@ -1,0 +1,16 @@
+.search {
+  position: relative;
+  z-index: 1;
+  &_bottom {
+    background-color: #f0f0f0;
+    position: absolute;
+    width: 50%;
+  }
+  &_item {
+    padding: 1rem;
+    &:hover {
+      cursor: pointer;
+      background-color: #e0e2e4;
+    }
+  }
+}
