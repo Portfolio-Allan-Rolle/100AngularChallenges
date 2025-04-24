@@ -15,6 +15,7 @@ import { RichTextViewerComponent } from '../../components/rich-text-viewer/rich-
 import { DebounceSearchComponent } from '../../components/debounce-search/debounce-search.component';
 import { SearchListComponent } from '../../components/search-list/search-list.component';
 import { CounterInputComponent } from '../../components/counter-input/counter-input.component';
+import { SimpleTableComponent } from '../../components/simple-table/simple-table.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -34,6 +35,7 @@ import { CounterInputComponent } from '../../components/counter-input/counter-in
     DebounceSearchComponent,
     SearchListComponent,
     CounterInputComponent,
+    SimpleTableComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
@@ -73,5 +75,25 @@ export class ComponentDocumentationComponent {
   dataSearch = ['Firefox', 'Chrome', 'Edge', 'Safari', 'Opera', 'Brave'];
 
   minCounterInput = 5;
-  maxCounterInput = 10; 
+  maxCounterInput = 10;
+
+  dataForSimpleTable = [
+    { name: 'Leanne Graham', username: 'Bret', email: 'Sincere@april.biz' },
+    { name: 'Ervin Howell', username: 'Antonette', email: 'Shanna@melissa.tv' },
+    {
+      name: 'Clementine Bauch',
+      username: 'Samantha',
+      email: 'Nathan@yesenia.net',
+    },
+    {
+      name: 'Patricia Lebsack',
+      username: 'Karianne',
+      email: 'Julianne.OConner@kory.org',
+    },
+    {
+      name: 'Chelsey Dietrich',
+      username: 'Kamren',
+      email: 'Lucio_Hettinger@annie.ca',
+    },
+  ];
 }
