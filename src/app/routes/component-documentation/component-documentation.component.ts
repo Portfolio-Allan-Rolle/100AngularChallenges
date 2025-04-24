@@ -14,6 +14,7 @@ import { ToggleComponent } from '../../components/toggle/toggle.component';
 import { RichTextViewerComponent } from '../../components/rich-text-viewer/rich-text-viewer.component';
 import { DebounceSearchComponent } from '../../components/debounce-search/debounce-search.component';
 import { SearchListComponent } from '../../components/search-list/search-list.component';
+import { CounterInputComponent } from '../../components/counter-input/counter-input.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -32,6 +33,7 @@ import { SearchListComponent } from '../../components/search-list/search-list.co
     RichTextViewerComponent,
     DebounceSearchComponent,
     SearchListComponent,
+    CounterInputComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
@@ -69,4 +71,7 @@ export class ComponentDocumentationComponent {
   }
 
   dataSearch = ['Firefox', 'Chrome', 'Edge', 'Safari', 'Opera', 'Brave'];
+
+  minCounterInput = 5;
+  maxCounterInput = 10; 
 }

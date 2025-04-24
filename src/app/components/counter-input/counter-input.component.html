@@ -1,0 +1,16 @@
+<div class="counter">
+  <button (click)="onDecreaseValue()" class="counter_control">-</button>
+  <input
+    #input
+    type="number"
+    class="counter_input"
+    value="{{ value() }}"
+    min="{{ min() }}"
+    max="{{ max() }}"
+    (input)="value.set(+input.value)"
+  />
+  <button (click)="onIncreaseValue()" class="counter_control">+</button>
+</div>
+@if(value()) {
+<p>Current value is {{ value() }}</p>
+}
