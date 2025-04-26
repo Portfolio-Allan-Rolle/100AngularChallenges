@@ -1,4 +1,11 @@
-import { Component, input, model } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  input,
+  model,
+  ViewChild,
+} from '@angular/core';
 
 enum Counter {
   DEFAULT_MIN = 2,
@@ -11,24 +18,28 @@ enum Counter {
   templateUrl: './counter-input.component.html',
   styleUrl: './counter-input.component.scss',
 })
-export class CounterInputComponent {
+export class CounterInputComponent implements AfterViewInit {
   min = input<number>(Counter.DEFAULT_MIN);
   max = input<number>(Counter.DEFAULT_MAX);
   value = model<number>(0);
+  @ViewChild('input') input!: ElementRef;
+  inputNativeEl!: HTMLInputElement;
+
+  ngAfterViewInit(): void {
+    this.inputNativeEl = this.input.nativeElement;
+  }
 
   onDecreaseValue() {
-    if (this.value() == Counter.DEFAULT_MIN) {
-      return;
-    } else if (this.value() > this.min()) {
-      this.value.set(this.value() - 1);
+    if (this.value() > this.min()) {
+      this.inputNativeEl.stepDown();
+      this.value.set(+this.inputNativeEl.value);
     }
   }
 
   onIncreaseValue() {
-    if (this.value() == Counter.DEFAULT_MAX) {
-      this.value.set(this.min());
-    } else if (this.value() < this.max()) {
-      this.value.set(this.value() + 1);
+    if (this.value() < this.max()) {
+      this.inputNativeEl.stepUp();
+      this.value.set(+this.inputNativeEl.value);
     }
   }
 }
