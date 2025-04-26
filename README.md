@@ -34,5 +34,6 @@ Lien pour visualiser le projet dans la description à droite ➡️
 22. Build a rich text viewer component that strips outs the html when it is invalid.
 23. Build a debounce search input that notifies the parent of its value updating every 250ms.
 24. Build a search list component that displays a list of possible strings that matches a given string.
-25. Build a counter input component. Have it take a min and max value. Default min to 0 and max to the safe max number. 
+25. Build a counter input component that takes a min & max value. Default min to 0 and max to the safe max number. 
 26. Build a simple table that takes an objet and outputs the values.
+27. Create a pipe that accepts an array of strings and a sort direction value of either asc or desc.

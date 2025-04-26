@@ -1,4 +1,8 @@
 <div class="wrapper-pipe">
+  <p>{{ dataToSort | sort : sortEnum.DESC }}</p>
+</div>
+
+<div class="wrapper-pipe">
   <p>{{ dataTruncatePipe | truncate }}</p>
 </div>
 
@@ -21,7 +25,7 @@
 <div class="wrapper-pipe">
   <h5>Original data:</h5>
   <p>{{ dataToFilter }}</p>
-  <br/>
+  <br />
   <h5>Data filtered by term: world:</h5>
   <p>{{ dataToFilter | filterTerm : "world" }}</p>
 </div>

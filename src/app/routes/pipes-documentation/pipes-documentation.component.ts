@@ -3,10 +3,18 @@ import { TruncatePipe } from '../../pipes/truncate.pipe';
 import { CreditCardFormatterPipe } from '../../pipes/credit-card-formatter.pipe';
 import { FlattenPipe } from '../../pipes/flatten.pipe';
 import { FilterTermPipe } from '../../pipes/filter-term.pipe';
+import { SortPipe } from '../../pipes/sort.pipe';
+import { sortType } from '../../models';
 
 @Component({
   selector: 'app-pipes-documentation',
-  imports: [TruncatePipe, CreditCardFormatterPipe, FlattenPipe, FilterTermPipe],
+  imports: [
+    TruncatePipe,
+    CreditCardFormatterPipe,
+    FlattenPipe,
+    FilterTermPipe,
+    SortPipe,
+  ],
   templateUrl: './pipes-documentation.component.html',
   styleUrl: './pipes-documentation.component.scss',
 })
@@ -46,5 +54,20 @@ export class PipesDocumentationComponent {
     'This world is mine',
     'dapibus',
     'I love this world',
+  ];
+
+  sortEnum: typeof sortType = sortType;
+
+  dataToSort = [
+    'leadership',
+    'guitar',
+    'childhood',
+    'boyfriend',
+    'reflection',
+    'nation',
+    'transportation',
+    'tea',
+    'decision',
+    'appointment',
   ];
 }
