@@ -16,6 +16,7 @@ import { DebounceSearchComponent } from '../../components/debounce-search/deboun
 import { SearchListComponent } from '../../components/search-list/search-list.component';
 import { CounterInputComponent } from '../../components/counter-input/counter-input.component';
 import { SimpleTableComponent } from '../../components/simple-table/simple-table.component';
+import { TabsComponent } from '../../components/tabs/tabs.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -36,11 +37,18 @@ import { SimpleTableComponent } from '../../components/simple-table/simple-table
     SearchListComponent,
     CounterInputComponent,
     SimpleTableComponent,
+    TabsComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
 })
 export class ComponentDocumentationComponent {
+  public dataForTabs: any[] = [
+    TwitterPostComponent,
+    ToggleComponent,
+    LinkedinPostComponent,
+  ];
+
   public accordionItems: IAccordionItem[] = [
     {
       title: 'Title 1',
