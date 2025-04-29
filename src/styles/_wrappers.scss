@@ -33,3 +33,15 @@
     color: #1c708c;
   }
 }
+
+.wrapper-miscellaneous {
+  border: 1px solid rgb(128, 128, 128);
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  &::before {
+    content: "\26C9 Miscellaneous";
+    font-size: 10px;
+    color: #1c708c;
+  }
+}
