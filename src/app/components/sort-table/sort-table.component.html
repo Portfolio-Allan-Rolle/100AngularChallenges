@@ -1,0 +1,27 @@
+@let data = this.sortedData(); @if(data.length > 0) {
+<table>
+  <thead>
+    <tr>
+      @for(item of data[0] | keyvalue; track item) {
+      <th>
+        {{ item.key }}
+        <span (click)="onSortingSelection({ key: item.key, value: item.value })"
+          >&uarr;&darr;</span
+        >
+      </th>
+      }
+    </tr>
+  </thead>
+  <tbody>
+    @for(item of sortedData(); track item.name) {
+    <tr>
+      @for(i of item | keyvalue; track i;) {
+      <th>{{ i.value }}</th>
+      }
+    </tr>
+    }
+  </tbody>
+</table>
+} @else {
+<p>There are no items.</p>
+}

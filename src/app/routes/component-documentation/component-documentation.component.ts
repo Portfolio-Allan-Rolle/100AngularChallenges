@@ -17,6 +17,7 @@ import { SearchListComponent } from '../../components/search-list/search-list.co
 import { CounterInputComponent } from '../../components/counter-input/counter-input.component';
 import { SimpleTableComponent } from '../../components/simple-table/simple-table.component';
 import { TabsComponent } from '../../components/tabs/tabs.component';
+import { SortTableComponent } from '../../components/sort-table/sort-table.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -38,6 +39,7 @@ import { TabsComponent } from '../../components/tabs/tabs.component';
     CounterInputComponent,
     SimpleTableComponent,
     TabsComponent,
+    SortTableComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
@@ -103,5 +105,13 @@ export class ComponentDocumentationComponent {
       username: 'Kamren',
       email: 'Lucio_Hettinger@annie.ca',
     },
+  ];
+
+  dataForSortTable = [
+    { name: 'Sarah Hard', age: 63, dob: '10/08/97', living: false },
+    { name: 'Leanne Graham', age: 23, dob: '10/08/89', living: true },
+    { name: 'Michelle Russell', age: 43, dob: '10/08/60', living: true },
+    { name: 'Victor Smith', age: 53, dob: '10/08/75', living: false },
+    { name: 'Sean Paul', age: 33, dob: '10/08/90', living: true },
   ];
 }

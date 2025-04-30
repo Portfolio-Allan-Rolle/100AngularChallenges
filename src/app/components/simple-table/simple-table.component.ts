@@ -1,4 +1,4 @@
-import { KeyValue, KeyValuePipe } from '@angular/common';
+import { KeyValuePipe } from '@angular/common';
 import { Component, input } from '@angular/core';
 
 @Component({
