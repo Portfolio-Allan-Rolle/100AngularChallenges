@@ -5,7 +5,9 @@
       @for(item of data[0] | keyvalue; track item) {
       <th>
         {{ item.key }}
-        <span (click)="onSortingSelection({ key: item.key, value: item.value })"
+        <span
+          (keyup)="onSortingSelection({ key: item.key, value: item.value })"
+          (click)="onSortingSelection({ key: item.key, value: item.value })"
           >&uarr;&darr;</span
         >
       </th>

@@ -1,9 +1,4 @@
-import {
-  Component,
-  computed,
-  input,
-  signal,
-} from '@angular/core';
+import { Component, computed, input, signal } from '@angular/core';
 import { KeyValuePipe } from '@angular/common';
 
 @Component({
@@ -27,7 +22,7 @@ export class SortTableComponent {
       case 'string':
         return this.sortString(value, key, data);
       default:
-        return this.data();
+        return data;
     }
   });
 
