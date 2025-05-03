@@ -1,0 +1,42 @@
+<h5>Email Form:</h5>
+<form (ngSubmit)="onSubmit()" [formGroup]="form">
+  <div class="container">
+    <input
+      formControlName="name"
+      type="text"
+      placeholder="Name"
+      name="name"
+      required
+    />
+    @if (isInvalidAndTouchedOrDirty(getFormControl("name"))) { @if
+    (getFormControl("name").errors?.["required"]) {
+    <p class="error-message">Name is required !</p>
+    } @if (getFormControl("name").errors?.["minlength"]) {
+    <p class="error-message">Name is too short</p>
+    } }
+    <input
+      formControlName="email"
+      type="email"
+      placeholder="Email address"
+      name="mail"
+      required
+    />
+    @if (isInvalidAndTouchedOrDirty(getFormControl("email"))) { @if
+    (getFormControl("email").errors?.["required"]) {
+    <p class="error-message">Email is required !</p>
+    } @if (getFormControl("email").errors?.["email"]) {
+    <p class="error-message">Email format is incorrect</p>
+    } }
+    <textarea formControlName="message" placeholder="Message..."></textarea>
+    @if (isInvalidAndTouchedOrDirty(getFormControl("message"))) { @if
+    (getFormControl("message").errors?.["maxlength"]) {
+    <p class="error-message">Message is too long</p>
+    }}
+  </div>
+  <div class="container">
+    <input type="submit" value="Submit" />
+  </div>
+</form>
+@if(this.formValue()) {
+<p>Form submitted successfully</p>
+}

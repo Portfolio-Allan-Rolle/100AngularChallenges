@@ -18,6 +18,7 @@ import { CounterInputComponent } from '../../components/counter-input/counter-in
 import { SimpleTableComponent } from '../../components/simple-table/simple-table.component';
 import { TabsComponent } from '../../components/tabs/tabs.component';
 import { SortTableComponent } from '../../components/sort-table/sort-table.component';
+import { EmailFormComponent } from '../../components/email-form/email-form.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -40,6 +41,7 @@ import { SortTableComponent } from '../../components/sort-table/sort-table.compo
     SimpleTableComponent,
     TabsComponent,
     SortTableComponent,
+    EmailFormComponent
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
