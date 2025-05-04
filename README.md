@@ -41,3 +41,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 29. Build a ripple directive that on hover changes color and on click ripple hover the element.
 30. Build a fade in & fade out animation that fades an element when entering and leaving the DOM.
 31. Build a sort table that sorts on a boolean, number, string and date.
+32. Build a reactive form guard to ask the user if they wanted to proceed with the move if the form is dirty.

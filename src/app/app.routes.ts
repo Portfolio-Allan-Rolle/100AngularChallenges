@@ -1,4 +1,5 @@
 import { Route } from '@angular/router';
+import { canDeactivateGuard } from './guards/can-deactivate.guard';
 
 export const routes: Route[] = [
   {
@@ -35,5 +36,6 @@ export const routes: Route[] = [
       import(
         './routes/miscellaneous-documentation/miscellaneous-documentation.component'
       ).then((m) => m.MiscellaneousDocumentationComponent),
+      canDeactivate: [canDeactivateGuard]
   },
 ];
