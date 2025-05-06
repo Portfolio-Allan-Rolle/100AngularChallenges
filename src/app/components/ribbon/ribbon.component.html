@@ -1,0 +1,37 @@
+<div>
+  <button (click)="ribbonPosition.set(enumRibbonPosition.TOP_LEFT)">
+    Top Left
+  </button>
+  <button (click)="ribbonPosition.set(enumRibbonPosition.TOP_RIGHT)">
+    Top Right
+  </button>
+  <button (click)="ribbonPosition.set(enumRibbonPosition.BOTTOM_RIGHT)">
+    Bottom Right
+  </button>
+  <button (click)="ribbonPosition.set(enumRibbonPosition.BOTTOM_LEFT)">
+    Bottom Left
+  </button>
+  <button (click)="ribbonType.set(enumRibbonType.INFO)">Info</button>
+  <button (click)="ribbonType.set(enumRibbonType.SUCCESS)">Success</button>
+  <button (click)="ribbonType.set(enumRibbonType.WARNING)">Warning</button>
+  <button (click)="ribbonType.set(enumRibbonType.ERROR)">Error</button>
+</div>
+<div
+  class="ribbon"
+  [class.ribbon-top-left]="ribbonPosition() == enumRibbonPosition.TOP_LEFT"
+  [class.ribbon-top-right]="ribbonPosition() == enumRibbonPosition.TOP_RIGHT"
+  [class.ribbon-bottom-left]="
+    ribbonPosition() == enumRibbonPosition.BOTTOM_LEFT
+  "
+  [class.ribbon-bottom-right]="
+    ribbonPosition() == enumRibbonPosition.BOTTOM_RIGHT
+  "
+>
+  <span
+    [class.info]="ribbonType() == enumRibbonType.INFO"
+    [class.error]="ribbonType() == enumRibbonType.ERROR"
+    [class.warning]="ribbonType() == enumRibbonType.WARNING"
+    [class.success]="ribbonType() == enumRibbonType.SUCCESS"
+    >ribbon</span
+  >
+</div>

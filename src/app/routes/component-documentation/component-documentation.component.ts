@@ -19,6 +19,8 @@ import { SimpleTableComponent } from '../../components/simple-table/simple-table
 import { TabsComponent } from '../../components/tabs/tabs.component';
 import { SortTableComponent } from '../../components/sort-table/sort-table.component';
 import { EmailFormComponent } from '../../components/email-form/email-form.component';
+import { RibbonComponent } from '../../components/ribbon/ribbon.component';
+import { ribbonPosition, ribbonType } from '../../models';
 
 @Component({
   selector: 'app-component-documentation',
@@ -41,12 +43,16 @@ import { EmailFormComponent } from '../../components/email-form/email-form.compo
     SimpleTableComponent,
     TabsComponent,
     SortTableComponent,
-    EmailFormComponent
+    EmailFormComponent,
+    RibbonComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
 })
 export class ComponentDocumentationComponent {
+  enumRibbonPosition: typeof ribbonPosition = ribbonPosition;
+  enumRibbonType: typeof ribbonType = ribbonType;
+
   public dataForTabs: any[] = [
     TwitterPostComponent,
     ToggleComponent,

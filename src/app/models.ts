@@ -30,3 +30,17 @@ export interface IUser {
     bs: string;
   };
 }
+
+export enum ribbonPosition {
+  TOP_LEFT = 'TOP_LEFT',
+  TOP_RIGHT = 'TOP_RIGHT',
+  BOTTOM_LEFT = 'BOTTOM_LEFT',
+  BOTTOM_RIGHT = 'BOTTOM_RIGHT',
+}
+
+export enum ribbonType {
+  SUCCESS = 'SUCCESS',
+  ERROR = 'ERROR',
+  INFO = 'INFO',
+  WARNING = 'WARNING',
+}
