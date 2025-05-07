@@ -21,6 +21,8 @@ import { SortTableComponent } from '../../components/sort-table/sort-table.compo
 import { EmailFormComponent } from '../../components/email-form/email-form.component';
 import { RibbonComponent } from '../../components/ribbon/ribbon.component';
 import { ribbonPosition, ribbonType } from '../../models';
+import { ButtonToggleComponent } from '../../components/button-toggle/button-toggle.component';
+import { IButtonGroup } from '../../models';
 
 @Component({
   selector: 'app-component-documentation',
@@ -45,11 +47,18 @@ import { ribbonPosition, ribbonType } from '../../models';
     SortTableComponent,
     EmailFormComponent,
     RibbonComponent,
+    ButtonToggleComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
 })
 export class ComponentDocumentationComponent {
+  public buttonGroupData: IButtonGroup[] = [
+    { id: 1, title: 'Bold', isActive: false },
+    { id: 2, title: 'Italic', isActive: false },
+    { id: 3, title: 'Underline', isActive: false },
+  ];
+
   enumRibbonPosition: typeof ribbonPosition = ribbonPosition;
   enumRibbonType: typeof ribbonType = ribbonType;
 

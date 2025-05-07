@@ -44,3 +44,9 @@ export enum ribbonType {
   INFO = 'INFO',
   WARNING = 'WARNING',
 }
+
+export interface IButtonGroup {
+  id: number;
+  title: string;
+  isActive: boolean;
+}
