@@ -23,6 +23,7 @@ import { RibbonComponent } from '../../components/ribbon/ribbon.component';
 import { ribbonPosition, ribbonType } from '../../models';
 import { ButtonToggleComponent } from '../../components/button-toggle/button-toggle.component';
 import { IButtonGroup } from '../../models';
+import { BannerCutOutComponent } from '../../components/banner-cut-out/banner-cut-out.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -48,6 +49,7 @@ import { IButtonGroup } from '../../models';
     EmailFormComponent,
     RibbonComponent,
     ButtonToggleComponent,
+    BannerCutOutComponent
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',

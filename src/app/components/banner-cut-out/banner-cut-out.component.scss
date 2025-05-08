@@ -1,0 +1,19 @@
+.banner {
+  height: 500px;
+  background-image: url("../../../assets/man-surfing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_container {
+    background-color: white;
+    padding: 20px 70px;
+    mix-blend-mode: color-dodge;
+  }
+  &_title {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+}

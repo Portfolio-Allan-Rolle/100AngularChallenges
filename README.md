@@ -45,3 +45,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 33. Build a GET call to get a user by id from https://jsonplaceholder.typicode.com/users 
 34. Build a ribbon component that has an error, info, success and warning type with four different location.
 35. Build a button group / toggle component and display selected option on click.
+36. Create a banner with text centered and merge the background with the text.
