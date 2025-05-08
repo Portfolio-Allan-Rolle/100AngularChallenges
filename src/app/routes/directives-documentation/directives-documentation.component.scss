@@ -1,3 +1,14 @@
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_object {
+    height: 50px;
+    width: 50px;
+    background-color: #6eb9f7;
+  }
+}
+
 .ripple-css-only {
   border: none;
   border-radius: 2px;
