@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { CardComponent } from '../../components/card/card.component';
 import { AccordionComponent } from '../../components/accordion/accordion.component';
 import { ProgressbarComponent } from '../../components/progressbar/progressbar.component';
@@ -24,10 +24,13 @@ import { ribbonPosition, ribbonType } from '../../models';
 import { ButtonToggleComponent } from '../../components/button-toggle/button-toggle.component';
 import { IButtonGroup } from '../../models';
 import { BannerCutOutComponent } from '../../components/banner-cut-out/banner-cut-out.component';
+import { SnackBarComponent } from '../../components/snack-bar/snack-bar.component';
+import { SnackBarService } from '../../services/snack-bar.service';
 
 @Component({
   selector: 'app-component-documentation',
   imports: [
+    SnackBarComponent,
     CardComponent,
     AccordionComponent,
     ProgressbarComponent,
@@ -49,7 +52,7 @@ import { BannerCutOutComponent } from '../../components/banner-cut-out/banner-cu
     EmailFormComponent,
     RibbonComponent,
     ButtonToggleComponent,
-    BannerCutOutComponent
+    BannerCutOutComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
@@ -133,4 +136,10 @@ export class ComponentDocumentationComponent {
     { name: 'Victor Smith', age: 53, dob: '10/08/75', living: false },
     { name: 'Sean Paul', age: 33, dob: '10/08/90', living: true },
   ];
+
+  public readonly snackBarService = inject(SnackBarService);
+
+  showSnackBar() {
+    this.snackBarService.onAnimating();
+  }
 }

@@ -3,6 +3,12 @@
     <app-banner-cut-out [title]="'100 Angular Challenges'"></app-banner-cut-out>
   </div>
   <div class="wrapper">
+    <div>
+      <button (click)="showSnackBar()">Show Snack Bar</button>
+    </div>
+    <app-snack-bar [message]="'Hello World'"></app-snack-bar>
+  </div>
+  <div class="wrapper">
     <app-button-toggle [data]="buttonGroupData"></app-button-toggle>
   </div>
   <div class="wrapper">
