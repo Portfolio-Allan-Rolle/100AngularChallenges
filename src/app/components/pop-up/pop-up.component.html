@@ -1,0 +1,8 @@
+<div>
+  <span class="popup" (click)="showPopUp()" (keyup)="showPopUp()">
+    @if(isVisible()) {
+    <span class="popup_message" @fadeInOut>{{ message() }}</span>
+    }
+    <ng-content></ng-content>
+  </span>
+</div>

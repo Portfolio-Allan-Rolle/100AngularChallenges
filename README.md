@@ -48,3 +48,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 36. Create a banner with text centered and merge the background with the text.
 37. Build a scale directive that scales an element to 1.25x its size.
 38. Build a snackbar component that takes a message and add a fade in/out animation from the bottom.
+39. Build a simple pop-up component that is shown on click above the element.

@@ -3,6 +3,11 @@
     <app-banner-cut-out [title]="'100 Angular Challenges'"></app-banner-cut-out>
   </div>
   <div class="wrapper">
+    <app-pop-up [message]="'Hello World !'">
+      <span>Click me to display pop-up message</span>
+    </app-pop-up>
+  </div>
+  <div class="wrapper">
     <div>
       <button (click)="showSnackBar()">Show Snack Bar</button>
     </div>

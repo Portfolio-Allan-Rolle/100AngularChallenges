@@ -26,6 +26,7 @@ import { IButtonGroup } from '../../models';
 import { BannerCutOutComponent } from '../../components/banner-cut-out/banner-cut-out.component';
 import { SnackBarComponent } from '../../components/snack-bar/snack-bar.component';
 import { SnackBarService } from '../../services/snack-bar.service';
+import { PopUpComponent } from '../../components/pop-up/pop-up.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -53,6 +54,7 @@ import { SnackBarService } from '../../services/snack-bar.service';
     RibbonComponent,
     ButtonToggleComponent,
     BannerCutOutComponent,
+    PopUpComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
