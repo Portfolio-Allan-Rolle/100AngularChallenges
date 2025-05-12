@@ -27,10 +27,12 @@ import { BannerCutOutComponent } from '../../components/banner-cut-out/banner-cu
 import { SnackBarComponent } from '../../components/snack-bar/snack-bar.component';
 import { SnackBarService } from '../../services/snack-bar.service';
 import { PopUpComponent } from '../../components/pop-up/pop-up.component';
+import { CountdownTimerComponent } from "../../components/countdown-timer/countdown-timer.component";
 
 @Component({
   selector: 'app-component-documentation',
   imports: [
+    CounterInputComponent,
     SnackBarComponent,
     CardComponent,
     AccordionComponent,
@@ -55,7 +57,8 @@ import { PopUpComponent } from '../../components/pop-up/pop-up.component';
     ButtonToggleComponent,
     BannerCutOutComponent,
     PopUpComponent,
-  ],
+    CountdownTimerComponent
+],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
 })

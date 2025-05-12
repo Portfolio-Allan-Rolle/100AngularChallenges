@@ -1,0 +1,35 @@
+.countdown {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+
+  &_headline {
+    font-weight: normal;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+  }
+
+  &_expired {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: red;
+  }
+
+  &_list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &_item {
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    display: inherit;
+    flex-direction: column;
+  }
+
+  &_value {
+    font-size: 6rem;
+  }
+}
