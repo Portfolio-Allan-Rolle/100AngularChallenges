@@ -27,7 +27,7 @@ import { BannerCutOutComponent } from '../../components/banner-cut-out/banner-cu
 import { SnackBarComponent } from '../../components/snack-bar/snack-bar.component';
 import { SnackBarService } from '../../services/snack-bar.service';
 import { PopUpComponent } from '../../components/pop-up/pop-up.component';
-import { CountdownTimerComponent } from "../../components/countdown-timer/countdown-timer.component";
+import { CountdownTimerComponent } from '../../components/countdown-timer/countdown-timer.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -57,8 +57,8 @@ import { CountdownTimerComponent } from "../../components/countdown-timer/countd
     ButtonToggleComponent,
     BannerCutOutComponent,
     PopUpComponent,
-    CountdownTimerComponent
-],
+    CountdownTimerComponent,
+  ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
 })
@@ -145,6 +145,6 @@ export class ComponentDocumentationComponent {
   public readonly snackBarService = inject(SnackBarService);
 
   showSnackBar() {
-    this.snackBarService.onAnimating();
+    this.snackBarService.animateSnackBar();
   }
 }

@@ -8,7 +8,7 @@ export class SnackBarService {
   isVisible = signal(false);
   isAnimatingSubscription!: Subscription;
 
-  onAnimating() {
+  animateSnackBar() {
     this.isVisible.set(true);
     this.isAnimatingSubscription = of(null)
       .pipe(delay(2900))

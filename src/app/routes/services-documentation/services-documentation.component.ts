@@ -10,14 +10,17 @@ import { UsersService } from '../../services/users.service';
 import { Subscription } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { IUser } from '../../models';
+import { SnackBarService } from '../../services/snack-bar.service';
+import { SnackBarComponent } from '../../components/snack-bar/snack-bar.component';
 
 @Component({
   selector: 'app-services-documentation',
-  imports: [CommonModule],
+  imports: [CommonModule, SnackBarComponent],
   templateUrl: './services-documentation.component.html',
   styleUrl: './services-documentation.component.scss',
 })
 export class ServicesDocumentationComponent implements OnInit, OnDestroy {
+  snackBarService = inject(SnackBarService);
   userService = inject(UsersService);
   usersLength = this.userService.getAllUsers();
   users$!: Subscription;
@@ -38,6 +41,10 @@ export class ServicesDocumentationComponent implements OnInit, OnDestroy {
       name: el.name,
       username: el.username,
     }));
+  }
+
+  showSnackBar() {
+    this.snackBarService.animateSnackBar();
   }
 
   ngOnInit(): void {

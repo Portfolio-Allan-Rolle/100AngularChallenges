@@ -1,4 +1,9 @@
 <div class="wrapper-services">
+  <button (click)="showSnackBar()">Call Snack Bar !</button>
+  <app-snack-bar [message]="'Hello from page services'"></app-snack-bar>
+</div>
+
+<div class="wrapper-services">
   @if(users()) {
   <div>
     <label for="users">Change User Id:</label>
