@@ -1,6 +1,8 @@
 <div class="wrapper-services">
-  <button (click)="showSnackBar()">Call Snack Bar !</button>
-  <app-snack-bar [message]="'Hello from page services'"></app-snack-bar>
+  <button (click)="showSnackBar('Hello from page services')">
+    Call Snack Bar !
+  </button>
+  <app-snack-bar></app-snack-bar>
 </div>
 
 <div class="wrapper-services">

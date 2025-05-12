@@ -8,7 +8,5 @@ import { SnackBarService } from '../../services/snack-bar.service';
   styleUrl: './snack-bar.component.scss',
 })
 export class SnackBarComponent {
-  readonly message = input.required();
   readonly snackBarService = inject(SnackBarService);
-  isVisible = this.snackBarService.isVisible;
 }

@@ -144,7 +144,7 @@ export class ComponentDocumentationComponent {
 
   public readonly snackBarService = inject(SnackBarService);
 
-  showSnackBar() {
-    this.snackBarService.animateSnackBar();
+  showSnackBar(message:string) {
+    this.snackBarService.animateSnackBar(message);
   }
 }

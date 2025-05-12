@@ -43,8 +43,8 @@ export class ServicesDocumentationComponent implements OnInit, OnDestroy {
     }));
   }
 
-  showSnackBar() {
-    this.snackBarService.animateSnackBar();
+  showSnackBar(message:string) {
+    this.snackBarService.animateSnackBar(message);
   }
 
   ngOnInit(): void {

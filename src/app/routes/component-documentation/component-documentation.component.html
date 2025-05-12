@@ -12,9 +12,11 @@
   </div>
   <div class="wrapper">
     <div>
-      <button (click)="showSnackBar()">Show Snack Bar</button>
+      <button (click)="showSnackBar('Hello from page component')">
+        Show Snack Bar
+      </button>
     </div>
-    <app-snack-bar [message]="'Hello World'"></app-snack-bar>
+    <app-snack-bar></app-snack-bar>
   </div>
   <div class="wrapper">
     <app-button-toggle [data]="buttonGroupData"></app-button-toggle>
