@@ -52,3 +52,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 40. Build a countdown timer component that outputs the days, hours, minutes and seconds.
 41. Build a singleton service that calls the snackbar from any page.
 42. Create 2 select dropdowns. When selecting a continent, show countries only from selected continent.
+43. Create a lazy load image directive that loads an image only if it is in view.

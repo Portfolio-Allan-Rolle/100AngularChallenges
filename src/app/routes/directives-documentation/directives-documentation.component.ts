@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { DebounceClickDirective } from '../../directives/debounce-click.directive';
 import { RippleDirective } from '../../directives/ripple.directive';
 import { ScaleDirective } from '../../directives/scale.directive';
+import { LazyLoadImageDirective } from '../../directives/lazy-load-image.directive';
 
 @Component({
   selector: 'app-directives-documentation',
-  imports: [DebounceClickDirective, RippleDirective, ScaleDirective],
+  imports: [DebounceClickDirective, RippleDirective, ScaleDirective, LazyLoadImageDirective],
   templateUrl: './directives-documentation.component.html',
   styleUrl: './directives-documentation.component.scss',
 })
