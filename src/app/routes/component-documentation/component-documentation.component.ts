@@ -28,10 +28,12 @@ import { SnackBarComponent } from '../../components/snack-bar/snack-bar.componen
 import { SnackBarService } from '../../services/snack-bar.service';
 import { PopUpComponent } from '../../components/pop-up/pop-up.component';
 import { CountdownTimerComponent } from '../../components/countdown-timer/countdown-timer.component';
+import { ContinentDropdrownComponent } from '../../components/continent-dropdrown/continent-dropdrown.component';
 
 @Component({
   selector: 'app-component-documentation',
   imports: [
+    ContinentDropdrownComponent,
     CounterInputComponent,
     SnackBarComponent,
     CardComponent,

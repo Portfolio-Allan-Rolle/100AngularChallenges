@@ -51,3 +51,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 39. Build a simple pop-up component that is shown on click above the element.
 40. Build a countdown timer component that outputs the days, hours, minutes and seconds.
 41. Build a singleton service that calls the snackbar from any page.
+42. Create 2 select dropdowns. When selecting a continent, show countries only from selected continent in 2nd dropdown.

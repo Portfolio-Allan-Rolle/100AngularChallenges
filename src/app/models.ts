@@ -50,3 +50,47 @@ export interface IButtonGroup {
   title: string;
   isActive: boolean;
 }
+
+export enum continents {
+  EUROPE = 'EUROPE',
+  ASIA = 'ASIA',
+  AFRICA = 'AFRICA',
+  AUSTRALIA = 'AUSTRALIA',
+  NORTH_AMERICA = 'NORTH AMERICA',
+  SOUTH_AMERICA = 'SOUTH AMERICA',
+}
+
+interface ICountry {
+  name: string;
+  continent: string;
+}
+
+export const countries: ICountry[] = [
+  { name: 'FRANCE', continent: continents.EUROPE },
+  { name: 'SPAIN', continent: continents.EUROPE },
+  { name: 'PORTUGAL', continent: continents.EUROPE },
+  { name: 'ITALY', continent: continents.EUROPE },
+  { name: 'GERMANY', continent: continents.EUROPE },
+  { name: 'CHINA', continent: continents.ASIA },
+  { name: 'INDIA', continent: continents.ASIA },
+  { name: 'INDONESIA', continent: continents.ASIA },
+  { name: 'JAPAN', continent: continents.ASIA },
+  { name: 'KOREA', continent: continents.ASIA },
+  { name: 'ANGOLA', continent: continents.AFRICA },
+  { name: 'BURKINA FASO', continent: continents.AFRICA },
+  { name: 'CAPE VERDE', continent: continents.AFRICA },
+  { name: 'BENIN', continent: continents.AFRICA },
+  { name: 'CAMEROON', continent: continents.AFRICA },
+  { name: 'FIJI', continent: continents.AUSTRALIA },
+  { name: 'SAMOA', continent: continents.AUSTRALIA },
+  { name: 'TONGA', continent: continents.AUSTRALIA },
+  { name: 'NEW ZEALAND', continent: continents.AUSTRALIA },
+  { name: 'PALAU', continent: continents.AUSTRALIA },
+  { name: 'CANADA', continent: continents.NORTH_AMERICA },
+  { name: 'UNITED STATES', continent: continents.NORTH_AMERICA },
+  { name: 'MEXICO', continent: continents.SOUTH_AMERICA },
+  { name: 'ARGENTINA', continent: continents.SOUTH_AMERICA },
+  { name: 'BREZIL', continent: continents.SOUTH_AMERICA },
+  { name: 'CHILE', continent: continents.SOUTH_AMERICA },
+  { name: 'COSTA RICA', continent: continents.SOUTH_AMERICA },
+];

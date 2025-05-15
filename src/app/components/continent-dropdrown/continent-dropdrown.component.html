@@ -1,0 +1,21 @@
+<p>Select a continent and country:</p>
+<div>
+  <select (change)="onSelectingContinent($event)">
+    <option selected disabled value="undefined">Select a continent</option>
+    @for(continent of continents; track continent) {
+    <option [value]="continent">{{ continent }}</option>
+    }
+  </select>
+</div>
+<div>
+  <select (change)="onSelectingCountry($event)">
+    <option selected disabled value="undefined">Select a country</option>
+    @for(country of countries(); track country.name) {
+    <option [value]="country.name">{{ country.name }}</option>
+    }
+  </select>
+</div>
+<div>
+  <p>You have selected continent: {{ selectedContinent() }}</p>
+  <p>You have selected country: {{ selectedCountry() }}</p>
+</div>
