@@ -17,3 +17,5 @@ export const fadeInOutAnimation = trigger('fadeInOut', [
     animate('1s ease-in', style({ opacity: 0 })),
   ]),
 ]);
+
+

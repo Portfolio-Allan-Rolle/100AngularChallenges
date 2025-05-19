@@ -1,4 +1,17 @@
 <div class="wrapper-directive">
+  <div class="objects">
+    <button (click)="isHexagonVisible.set(!isHexagonVisible())">
+      Show Hexagon
+    </button>
+    <button (click)="isCubeVisible.set(!isCubeVisible())">Show Cube</button>
+    @if(isHexagonVisible()) {
+    <div appSlideToRight class="objects_hexagon"></div>
+    } @if(isCubeVisible()) {
+    <div appSlideToRight class="objects_cube"></div>
+    }
+  </div>
+</div>
+<div class="wrapper-directive">
   <div class="square">
     <div appScale class="square_object"></div>
   </div>
