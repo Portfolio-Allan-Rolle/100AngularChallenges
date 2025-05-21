@@ -56,3 +56,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 44. Build a footer component with the current year and social media available.
 45. Build an animation to slide right when an element enters.
 46. Build a skeleton loader
+47. Build a social media bar that floats on the ride hand side.

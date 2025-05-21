@@ -30,6 +30,7 @@ import { PopUpComponent } from '../../components/pop-up/pop-up.component';
 import { CountdownTimerComponent } from '../../components/countdown-timer/countdown-timer.component';
 import { ContinentDropdrownComponent } from '../../components/continent-dropdrown/continent-dropdrown.component';
 import { SkeletonDirective } from '../../directives/skeleton.directive';
+import { SocialMediaBarComponent } from "../../components/social-media-bar/social-media-bar.component";
 
 @Component({
   selector: 'app-component-documentation',
@@ -62,7 +63,8 @@ import { SkeletonDirective } from '../../directives/skeleton.directive';
     BannerCutOutComponent,
     PopUpComponent,
     CountdownTimerComponent,
-  ],
+    SocialMediaBarComponent
+],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
 })
