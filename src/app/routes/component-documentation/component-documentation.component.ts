@@ -29,10 +29,12 @@ import { SnackBarService } from '../../services/snack-bar.service';
 import { PopUpComponent } from '../../components/pop-up/pop-up.component';
 import { CountdownTimerComponent } from '../../components/countdown-timer/countdown-timer.component';
 import { ContinentDropdrownComponent } from '../../components/continent-dropdrown/continent-dropdrown.component';
+import { SkeletonDirective } from '../../directives/skeleton.directive';
 
 @Component({
   selector: 'app-component-documentation',
   imports: [
+    SkeletonDirective,
     ContinentDropdrownComponent,
     CounterInputComponent,
     SnackBarComponent,
@@ -146,7 +148,7 @@ export class ComponentDocumentationComponent {
 
   public readonly snackBarService = inject(SnackBarService);
 
-  showSnackBar(message:string) {
+  showSnackBar(message: string) {
     this.snackBarService.animateSnackBar(message);
   }
 }
