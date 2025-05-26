@@ -1,0 +1,31 @@
+.modal {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 1000px);
+  z-index: 3;
+  background-color: #f3e3e3;
+  padding: 30px;
+  border-radius: 20px 20px 0 0;
+  width: 30em;
+  line-height: 1.5;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

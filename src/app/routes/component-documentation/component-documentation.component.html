@@ -1,5 +1,16 @@
 <div>
   <div class="wrapper">
+    <div>
+      <button (click)="bottomSheetService.setModal()">Display Modal</button>
+    </div>
+    <app-bottom-sheet>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+        nunc non luctus sagittis. In dapibus ornare viverra.
+      </p>
+    </app-bottom-sheet>
+  </div>
+  <div class="wrapper">
     <app-social-media-bar></app-social-media-bar>
   </div>
   <div class="wrapper">

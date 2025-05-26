@@ -31,10 +31,13 @@ import { CountdownTimerComponent } from '../../components/countdown-timer/countd
 import { ContinentDropdrownComponent } from '../../components/continent-dropdrown/continent-dropdrown.component';
 import { SkeletonDirective } from '../../directives/skeleton.directive';
 import { SocialMediaBarComponent } from "../../components/social-media-bar/social-media-bar.component";
+import { BottomSheetComponent } from '../../components/bottom-sheet/bottom-sheet.component';
+import { BottomSheetService } from '../../services/bottom-sheet.service';
 
 @Component({
   selector: 'app-component-documentation',
   imports: [
+    BottomSheetComponent,
     SkeletonDirective,
     ContinentDropdrownComponent,
     CounterInputComponent,
@@ -69,6 +72,7 @@ import { SocialMediaBarComponent } from "../../components/social-media-bar/socia
   styleUrl: './component-documentation.component.scss',
 })
 export class ComponentDocumentationComponent {
+  public bottomSheetService = inject(BottomSheetService);
   public buttonGroupData: IButtonGroup[] = [
     { id: 1, title: 'Bold', isActive: false },
     { id: 2, title: 'Italic', isActive: false },

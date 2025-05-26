@@ -57,3 +57,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 45. Build an animation to slide right when an element enters.
 46. Build a skeleton loader
 47. Build a social media bar that floats on the ride hand side.
+48. Build a pop-up component that slides from the bottom.

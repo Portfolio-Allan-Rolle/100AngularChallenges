@@ -1,0 +1,13 @@
+<div
+  class="modal"
+  [class.slide-in-bottom]="bottomSheetService.isModalVisible()"
+>
+  <ng-content></ng-content>
+</div>
+<div
+  class="overlay"
+  [class.visible]="bottomSheetService.isOverlayVisible()"
+  [class.hidden]="!bottomSheetService.isOverlayVisible()"
+  (keyup)="bottomSheetService.hideModal()"
+  (click)="bottomSheetService.hideModal()"
+></div>
