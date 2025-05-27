@@ -1,0 +1,35 @@
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+
+  legend {
+    position: relative;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::before {
+      transform: translateX(-10px);
+      border: 1px solid;
+      border-radius: 50%;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &.open:before {
+      content: "\2796";
+    }
+
+    &.closed::before {
+      content: "\02795";
+    }
+  }
+}

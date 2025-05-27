@@ -1,0 +1,16 @@
+<fieldset>
+  <legend
+    [class.open]="isVisible()"
+    [class.closed]="!isVisible()"
+    (keypress)="toggleFieldset()"
+    (click)="toggleFieldset()"
+  >
+    {{ fieldsetLegend() }}
+  </legend>
+  <br />
+  @if(this.isVisible()) {
+  <div>
+    <ng-content></ng-content>
+  </div>
+  }
+</fieldset>

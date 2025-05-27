@@ -30,13 +30,15 @@ import { PopUpComponent } from '../../components/pop-up/pop-up.component';
 import { CountdownTimerComponent } from '../../components/countdown-timer/countdown-timer.component';
 import { ContinentDropdrownComponent } from '../../components/continent-dropdrown/continent-dropdrown.component';
 import { SkeletonDirective } from '../../directives/skeleton.directive';
-import { SocialMediaBarComponent } from "../../components/social-media-bar/social-media-bar.component";
+import { SocialMediaBarComponent } from '../../components/social-media-bar/social-media-bar.component';
 import { BottomSheetComponent } from '../../components/bottom-sheet/bottom-sheet.component';
 import { BottomSheetService } from '../../services/bottom-sheet.service';
+import { FieldsetToggleComponent } from '../../components/fieldset-toggle/fieldset-toggle.component';
 
 @Component({
   selector: 'app-component-documentation',
   imports: [
+    FieldsetToggleComponent,
     BottomSheetComponent,
     SkeletonDirective,
     ContinentDropdrownComponent,
@@ -66,8 +68,8 @@ import { BottomSheetService } from '../../services/bottom-sheet.service';
     BannerCutOutComponent,
     PopUpComponent,
     CountdownTimerComponent,
-    SocialMediaBarComponent
-],
+    SocialMediaBarComponent,
+  ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
 })

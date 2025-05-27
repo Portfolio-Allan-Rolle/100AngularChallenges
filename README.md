@@ -58,3 +58,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 46. Build a skeleton loader
 47. Build a social media bar that floats on the ride hand side.
 48. Build a pop-up component that slides from the bottom.
+49. Build a fieldset toggle that can be collapsed and passes in content.
