@@ -4,7 +4,7 @@ import { AccordionComponent } from '../../components/accordion/accordion.compone
 import { ProgressbarComponent } from '../../components/progressbar/progressbar.component';
 import { StarRatingComponent } from '../../components/star-rating/star-rating.component';
 import { TopOfPageComponent } from '../../components/top-of-page/top-of-page.component';
-import { IAccordionItem } from '../../models';
+import { IAccordionItem, pillType } from '../../models';
 import { CreditCardInputComponent } from '../../components/credit-card-input/credit-card-input.component';
 import { TwitterPostComponent } from '../../components/twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from '../../components/linkedin-post/linkedin-post.component';
@@ -34,6 +34,7 @@ import { SocialMediaBarComponent } from '../../components/social-media-bar/socia
 import { BottomSheetComponent } from '../../components/bottom-sheet/bottom-sheet.component';
 import { BottomSheetService } from '../../services/bottom-sheet.service';
 import { FieldsetToggleComponent } from '../../components/fieldset-toggle/fieldset-toggle.component';
+import { PillComponent } from '../../components/pill/pill.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -69,6 +70,7 @@ import { FieldsetToggleComponent } from '../../components/fieldset-toggle/fields
     PopUpComponent,
     CountdownTimerComponent,
     SocialMediaBarComponent,
+    PillComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
@@ -83,6 +85,7 @@ export class ComponentDocumentationComponent {
 
   enumRibbonPosition: typeof ribbonPosition = ribbonPosition;
   enumRibbonType: typeof ribbonType = ribbonType;
+  enumPillType: typeof pillType = pillType;
 
   public dataForTabs: any[] = [
     TwitterPostComponent,

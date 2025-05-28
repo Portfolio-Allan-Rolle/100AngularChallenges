@@ -1,5 +1,36 @@
 <div>
   <div class="wrapper">
+    <div>
+      <app-pill
+        [label]="'Primary'"
+        [type]="enumPillType.PRIMARY"
+        [icon]="'https://img.icons8.com/wired/64/checked-2.png'"
+      ></app-pill
+      ><br />
+      <app-pill [label]="'Secondary'" [type]="enumPillType.SECONDARY"></app-pill
+      ><br />
+      <app-pill
+        [label]="'Success'"
+        [type]="enumPillType.SUCCESS"
+        [icon]="'https://img.icons8.com/wired/64/checked-2.png'"
+      ></app-pill
+      ><br />
+      <app-pill
+        [label]="'Danger'"
+        [type]="enumPillType.DANGER"
+        [icon]="'https://img.icons8.com/wired/64/checked-2.png'"
+      ></app-pill
+      ><br />
+      <app-pill [label]="'Warning'" [type]="enumPillType.WARNING"></app-pill
+      ><br />
+      <app-pill
+        [label]="'Info'"
+        [type]="enumPillType.INFO"
+        [icon]="'https://img.icons8.com/wired/64/checked-2.png'"
+      ></app-pill>
+    </div>
+  </div>
+  <div class="wrapper">
     <form>
       <app-fieldset-toggle [fieldsetLegend]="'Identification'">
         <label for="fname">First name:</label><br />

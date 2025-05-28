@@ -94,3 +94,12 @@ export const countries: ICountry[] = [
   { name: 'CHILE', continent: continents.SOUTH_AMERICA },
   { name: 'COSTA RICA', continent: continents.SOUTH_AMERICA },
 ];
+
+export enum pillType {
+  PRIMARY = 'PRIMARY',
+  SECONDARY = 'SECONDARY',
+  SUCCESS = 'SUCCESS',
+  DANGER = 'DANGER',
+  WARNING = 'WARNING',
+  INFO = 'INFO',
+}

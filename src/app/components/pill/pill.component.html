@@ -1,0 +1,14 @@
+<span
+  class="pill"
+  [class.primary]="type() == enumPillType.PRIMARY"
+  [class.secondary]="type() == enumPillType.SECONDARY"
+  [class.success]="type() == enumPillType.SUCCESS"
+  [class.danger]="type() == enumPillType.DANGER"
+  [class.warning]="type() == enumPillType.WARNING"
+  [class.info]="type() == enumPillType.INFO"
+>
+  @if(icon()) {
+  <img class="pill_icon" width="20" height="20" src="{{ icon() }}" alt="icon" />
+  }
+  <span>{{ label() }}</span>
+</span>
