@@ -1,5 +1,5 @@
 <div>
-  <div class="wrapper">
+  <app-container [title]="'Component'">
     <div>
       <app-pill
         [label]="'Primary'"
@@ -29,8 +29,9 @@
         [icon]="'https://img.icons8.com/wired/64/checked-2.png'"
       ></app-pill>
     </div>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <form>
       <app-fieldset-toggle [fieldsetLegend]="'Identification'">
         <label for="fname">First name:</label><br />
@@ -52,8 +53,9 @@
       </app-fieldset-toggle>
       <input type="submit" value="Submit" />
     </form>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <div>
       <button (click)="bottomSheetService.setModal()">Display Modal</button>
     </div>
@@ -63,11 +65,13 @@
         nunc non luctus sagittis. In dapibus ornare viverra.
       </p>
     </app-bottom-sheet>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-social-media-bar></app-social-media-bar>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     @defer {
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
@@ -82,124 +86,152 @@
     }@placeholder (minimum 2000ms) {
     <div appSkeleton [width]="'100%'" [heigth]="'50px'"></div>
     }
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-banner-cut-out [title]="'100 Angular Challenges'"></app-banner-cut-out>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-continent-dropdrown></app-continent-dropdrown>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-countdown-timer [time]="'Aug 30, 2025 09:45:00'"></app-countdown-timer>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-pop-up [message]="'Hello World !'">
       <span>Click me to display pop-up message</span>
     </app-pop-up>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <div>
       <button (click)="showSnackBar('Hello from page component')">
         Show Snack Bar
       </button>
     </div>
     <app-snack-bar></app-snack-bar>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-button-toggle [data]="buttonGroupData"></app-button-toggle>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-ribbon
       [ribbonPosition]="enumRibbonPosition.TOP_RIGHT"
       [ribbonType]="enumRibbonType.WARNING"
     ></app-ribbon>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-email-form></app-email-form>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-sort-table [data]="dataForSortTable"></app-sort-table>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-tabs [data]="dataForTabs"></app-tabs>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-simple-table [data]="dataForSimpleTable"></app-simple-table>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-counter-input
       [min]="minCounterInput"
       [max]="maxCounterInput"
     ></app-counter-input>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-search-list [dataSearch]="dataSearch"></app-search-list>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-debounce-search
       (onDebounceSearch)="onSearch($event)"
     ></app-debounce-search>
     <p>Your searched for: {{ debounceSearch() }}</p>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-card [name]="'Allan'" [job]="'Front-End Developer'">
       <p>CDI</p>
     </app-card>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-card [name]="'Chris'" [job]="'Back-End Developer'">
       <p>Freelance</p>
     </app-card>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-accordion [items]="accordionItems"></app-accordion>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-progressbar
       [valueNow]="progressBarValue()"
       (onUpdate)="changeProgressBarValue()"
     ></app-progressbar>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-star-rating [reviewNumber]="3.5"></app-star-rating>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-top-of-page [distanceFromTopOfPage]="50"></app-top-of-page>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-credit-card-input
       [isReadOnly]="false"
       [cardNumber]="'3234'"
     ></app-credit-card-input>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-credit-card-input
       [isReadOnly]="true"
       [cardNumber]="'6234543215678987'"
     ></app-credit-card-input>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-twitter-post [hashTags]="['one', 'two', 'three']"></app-twitter-post>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-linkedin-post></app-linkedin-post>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-modal [modalTitle]="'Modal title goes here'"></app-modal>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-quote
       [quote]="quote"
       [author]="quoteAuthor"
       [occupation]="quoteOccupation"
     ></app-quote>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <app-toggle>
       <p>I am visible only when the toggle is on !</p>
     </app-toggle>
-  </div>
-  <div class="wrapper">
+  </app-container>
+
+  <app-container [title]="'Component'">
     <h5>Good Exemple</h5>
     <app-rich-text-viewer
       [html]="'<p>I am valid html</p>'"
@@ -210,5 +242,5 @@
     <app-rich-text-viewer
       [html]="'<strong>I am invalid'"
     ></app-rich-text-viewer>
-  </div>
+  </app-container>
 </div>

@@ -4,10 +4,11 @@ import {
   NonNullableFormBuilder,
   ReactiveFormsModule,
 } from '@angular/forms';
+import { ContainerComponent } from '../../components/container/container.component';
 
 @Component({
   selector: 'app-miscellaneous-documentation',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, ContainerComponent],
   templateUrl: './miscellaneous-documentation.component.html',
   styleUrl: './miscellaneous-documentation.component.scss',
   animations: [fadeInOutAnimation],

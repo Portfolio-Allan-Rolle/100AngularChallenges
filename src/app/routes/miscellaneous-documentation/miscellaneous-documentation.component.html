@@ -1,18 +1,17 @@
-<div class="wrapper-miscellaneous">
+<app-container [title]="'Miscellaneous'">
   <form class="form" [formGroup]="form">
     <input formControlName="name" class="form_input" type="text" />
     <button (click)="onSubmit()" type="submit">Submit</button>
   </form>
-</div>
-<div class="wrapper-miscellaneous">
+</app-container>
+
+<app-container [title]="'Miscellaneous'">
   <div>
     <button (click)="onToggle()">
       Toggle element using a fade in/out animation
     </button>
     @if(isElementVisible()) {
-
     <p @fadeInOut>Hello World !</p>
-
     }
   </div>
-</div>
+</app-container>

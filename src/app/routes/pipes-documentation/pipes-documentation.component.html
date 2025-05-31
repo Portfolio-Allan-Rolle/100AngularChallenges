@@ -1,12 +1,12 @@
-<div class="wrapper-pipe">
+<app-container [title]="'Pipe'">
   <p>{{ dataToSort | sort : sortEnum.DESC }}</p>
-</div>
+</app-container>
 
-<div class="wrapper-pipe">
+<app-container [title]="'Pipe'">
   <p>{{ dataTruncatePipe | truncate }}</p>
-</div>
+</app-container>
 
-<div class="wrapper-pipe">
+<app-container [title]="'Pipe'">
   <p>{{ creditCardNumber() | creditCardFormatter }}</p>
   <br />
   <button (click)="changeToValid()">Valid Credit Card Number</button>
@@ -16,16 +16,16 @@
   <button (click)="changeToInvalidCaracters()">
     Invalid Credit Card Number Caracters
   </button>
-</div>
+</app-container>
 
-<div class="wrapper-pipe">
+<app-container [title]="'Pipe'">
   <p>{{ dataToFlatten() | flatten }}</p>
-</div>
+</app-container>
 
-<div class="wrapper-pipe">
+<app-container [title]="'Pipe'">
   <h5>Original data:</h5>
   <p>{{ dataToFilter }}</p>
   <br />
   <h5>Data filtered by term: world:</h5>
   <p>{{ dataToFilter | filterTerm : "world" }}</p>
-</div>
+</app-container>

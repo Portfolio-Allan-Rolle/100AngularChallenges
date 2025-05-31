@@ -4,6 +4,7 @@ import { RippleDirective } from '../../directives/ripple.directive';
 import { ScaleDirective } from '../../directives/scale.directive';
 import { LazyLoadImageDirective } from '../../directives/lazy-load-image.directive';
 import { SlideToRightDirective } from '../../directives/slide-to-right.directive';
+import { ContainerComponent } from '../../components/container/container.component';
 
 @Component({
   selector: 'app-directives-documentation',
@@ -13,6 +14,7 @@ import { SlideToRightDirective } from '../../directives/slide-to-right.directive
     ScaleDirective,
     LazyLoadImageDirective,
     SlideToRightDirective,
+    ContainerComponent
   ],
   templateUrl: './directives-documentation.component.html',
   styleUrl: './directives-documentation.component.scss',

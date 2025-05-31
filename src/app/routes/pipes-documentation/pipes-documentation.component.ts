@@ -5,6 +5,7 @@ import { FlattenPipe } from '../../pipes/flatten.pipe';
 import { FilterTermPipe } from '../../pipes/filter-term.pipe';
 import { SortPipe } from '../../pipes/sort.pipe';
 import { sortType } from '../../models';
+import { ContainerComponent } from '../../components/container/container.component';
 
 @Component({
   selector: 'app-pipes-documentation',
@@ -14,6 +15,7 @@ import { sortType } from '../../models';
     FlattenPipe,
     FilterTermPipe,
     SortPipe,
+    ContainerComponent
   ],
   templateUrl: './pipes-documentation.component.html',
   styleUrl: './pipes-documentation.component.scss',

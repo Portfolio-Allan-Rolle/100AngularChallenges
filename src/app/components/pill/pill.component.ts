@@ -1,4 +1,4 @@
-import { Component, input, OnInit } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { pillType } from '../../models';
 import { CommonModule } from '@angular/common';
 
@@ -8,13 +8,9 @@ import { CommonModule } from '@angular/common';
   templateUrl: './pill.component.html',
   styleUrl: './pill.component.scss',
 })
-export class PillComponent implements OnInit {
+export class PillComponent {
   label = input.required<string>();
   type = input.required<string>();
   icon = input<string>();
   enumPillType: typeof pillType = pillType;
-
-  ngOnInit(): void {
-    console.log(this.enumPillType.PRIMARY);
-  }
 }

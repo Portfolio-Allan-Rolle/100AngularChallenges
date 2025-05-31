@@ -1,0 +1,16 @@
+.container {
+  border: 1px solid rgb(128, 128, 128);
+  padding: 10px;
+  margin: 10px;
+
+  &_title {
+    font-size: 10px;
+    color: #1c708c;
+    margin-bottom: 10px;
+
+    &::before {
+      content: "\26c9";
+      margin-right: 3px;
+    }
+  }
+}

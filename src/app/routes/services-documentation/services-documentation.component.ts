@@ -12,10 +12,11 @@ import { CommonModule } from '@angular/common';
 import { IUser } from '../../models';
 import { SnackBarService } from '../../services/snack-bar.service';
 import { SnackBarComponent } from '../../components/snack-bar/snack-bar.component';
+import { ContainerComponent } from '../../components/container/container.component';
 
 @Component({
   selector: 'app-services-documentation',
-  imports: [CommonModule, SnackBarComponent],
+  imports: [CommonModule, SnackBarComponent, ContainerComponent],
   templateUrl: './services-documentation.component.html',
   styleUrl: './services-documentation.component.scss',
 })
@@ -43,7 +44,7 @@ export class ServicesDocumentationComponent implements OnInit, OnDestroy {
     }));
   }
 
-  showSnackBar(message:string) {
+  showSnackBar(message: string) {
     this.snackBarService.animateSnackBar(message);
   }
 

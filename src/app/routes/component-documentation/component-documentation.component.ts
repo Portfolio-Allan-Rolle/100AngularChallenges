@@ -35,6 +35,7 @@ import { BottomSheetComponent } from '../../components/bottom-sheet/bottom-sheet
 import { BottomSheetService } from '../../services/bottom-sheet.service';
 import { FieldsetToggleComponent } from '../../components/fieldset-toggle/fieldset-toggle.component';
 import { PillComponent } from '../../components/pill/pill.component';
+import { ContainerComponent } from '../../components/container/container.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -71,6 +72,7 @@ import { PillComponent } from '../../components/pill/pill.component';
     CountdownTimerComponent,
     SocialMediaBarComponent,
     PillComponent,
+    ContainerComponent
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',

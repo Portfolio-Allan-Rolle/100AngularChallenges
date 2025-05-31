@@ -1,4 +1,4 @@
-<div class="wrapper-directive">
+<app-container [title]="'Directive'">
   <div class="objects">
     <button (click)="isHexagonVisible.set(!isHexagonVisible())">
       Show Hexagon
@@ -10,21 +10,23 @@
     <div appSlideToRight class="objects_cube"></div>
     }
   </div>
-</div>
-<div class="wrapper-directive">
+</app-container>
+
+<app-container [title]="'Directive'">
   <div class="square">
     <div appScale class="square_object"></div>
   </div>
-</div>
+</app-container>
 
-<div class="wrapper-directive">
+<app-container [title]="'Directive'">
   <div>
     <button appDebounceClick (debounceClickFunction)="log()">
       Log 'Hello World' in the console
     </button>
   </div>
-</div>
-<div class="wrapper-directive">
+</app-container>
+
+<app-container [title]="'Directive'">
   <div>
     <button class="ripple-css-only">Click Me !</button>
   </div>
@@ -32,10 +34,12 @@
   <div>
     <button appRipple class="ripple-with-directive">Click Me !</button>
   </div>
-</div>
+</app-container>
+
 <div style="height: 800px"></div>
-<div class="wrapper-directive">
+
+<app-container [title]="'Directive'">
   <div>
     <img alt="man surfing" [imageURI]="'man-surfing.jpg'" appLazyLoadImage />
   </div>
-</div>
+</app-container>

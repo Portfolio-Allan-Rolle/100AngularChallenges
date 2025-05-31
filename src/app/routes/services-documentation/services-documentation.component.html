@@ -1,11 +1,11 @@
-<div class="wrapper-services">
+<app-container [title]="'Services'">
   <button (click)="showSnackBar('Hello from page services')">
     Call Snack Bar !
   </button>
   <app-snack-bar></app-snack-bar>
-</div>
+</app-container>
 
-<div class="wrapper-services">
+<app-container [title]="'Services'">
   @if(users()) {
   <div>
     <label for="users">Change User Id:</label>
@@ -20,4 +20,4 @@
   @if(error()) {
   <p>{{ error() }}</p>
   }
-</div>
+</app-container>
