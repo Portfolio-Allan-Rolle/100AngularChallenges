@@ -1,14 +1,14 @@
 <div class="accordion">
   @for (item of items(); track $index; let idx = $index) {
-  <div class="accordion_item">
-    <h2 class="accordion_title" [class.active]="item.isExpanded">
-      <button class="accordion_button" (click)="onSelectItem(item)">
-        {{ item.title }}
-      </button>
-    </h2>
-    <div class="accordion_content" [class.active]="item.isExpanded">
-      <p class="accordion_text">{{ item.content }}</p>
+    <div class="accordion_item">
+      <h2 class="accordion_title" [class.active]="item.isExpanded">
+        <button class="accordion_button" (click)="onSelectItem(item)">
+          {{ item.title }}
+        </button>
+      </h2>
+      <div class="accordion_content" [class.active]="item.isExpanded">
+        <p class="accordion_text">{{ item.content }}</p>
+      </div>
     </div>
-  </div>
   }
 </div>

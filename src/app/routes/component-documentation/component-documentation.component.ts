@@ -36,10 +36,12 @@ import { BottomSheetService } from '../../services/bottom-sheet.service';
 import { FieldsetToggleComponent } from '../../components/fieldset-toggle/fieldset-toggle.component';
 import { PillComponent } from '../../components/pill/pill.component';
 import { ContainerComponent } from '../../components/container/container.component';
+import { PillFiltersComponent } from '../../components/pill-filters/pill-filters.component';
 
 @Component({
   selector: 'app-component-documentation',
   imports: [
+    PillFiltersComponent,
     FieldsetToggleComponent,
     BottomSheetComponent,
     SkeletonDirective,
@@ -72,7 +74,7 @@ import { ContainerComponent } from '../../components/container/container.compone
     CountdownTimerComponent,
     SocialMediaBarComponent,
     PillComponent,
-    ContainerComponent
+    ContainerComponent,
   ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',

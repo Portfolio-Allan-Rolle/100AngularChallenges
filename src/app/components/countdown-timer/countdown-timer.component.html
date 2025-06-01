@@ -1,27 +1,27 @@
 <div class="countdown">
   <h1 class="countdown_headline">Countdown</h1>
-  @if(!expired()) {
-  <div class="countdown_container">
-    <ul class="countdown_list">
-      <li class="countdown_item">
-        <span class="countdown_value">{{ days() }}</span
-        ><span>days</span>
-      </li>
-      <li class="countdown_item">
-        <span class="countdown_value">{{ hours() }}</span
-        ><span>hours</span>
-      </li>
-      <li class="countdown_item">
-        <span class="countdown_value">{{ minutes() }}</span
-        ><span>minutes</span>
-      </li>
-      <li class="countdown_item">
-        <span class="countdown_value">{{ seconds() }}</span
-        ><span>seconds</span>
-      </li>
-    </ul>
-  </div>
-  }@else {
-  <div class="countdown_expired">Countdown Expired !</div>
+  @if (!expired()) {
+    <div class="countdown_container">
+      <ul class="countdown_list">
+        <li class="countdown_item">
+          <span class="countdown_value">{{ days() }}</span
+          ><span>days</span>
+        </li>
+        <li class="countdown_item">
+          <span class="countdown_value">{{ hours() }}</span
+          ><span>hours</span>
+        </li>
+        <li class="countdown_item">
+          <span class="countdown_value">{{ minutes() }}</span
+          ><span>minutes</span>
+        </li>
+        <li class="countdown_item">
+          <span class="countdown_value">{{ seconds() }}</span
+          ><span>seconds</span>
+        </li>
+      </ul>
+    </div>
+  } @else {
+    <div class="countdown_expired">Countdown Expired !</div>
   }
 </div>

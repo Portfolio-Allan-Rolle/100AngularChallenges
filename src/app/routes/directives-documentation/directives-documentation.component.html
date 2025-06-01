@@ -4,10 +4,11 @@
       Show Hexagon
     </button>
     <button (click)="isCubeVisible.set(!isCubeVisible())">Show Cube</button>
-    @if(isHexagonVisible()) {
-    <div appSlideToRight class="objects_hexagon"></div>
-    } @if(isCubeVisible()) {
-    <div appSlideToRight class="objects_cube"></div>
+    @if (isHexagonVisible()) {
+      <div appSlideToRight class="objects_hexagon"></div>
+    }
+    @if (isCubeVisible()) {
+      <div appSlideToRight class="objects_cube"></div>
     }
   </div>
 </app-container>

@@ -1,5 +1,5 @@
 <app-container [title]="'Pipe'">
-  <p>{{ dataToSort | sort : sortEnum.DESC }}</p>
+  <p>{{ dataToSort | sort: sortEnum.DESC }}</p>
 </app-container>
 
 <app-container [title]="'Pipe'">
@@ -27,5 +27,5 @@
   <p>{{ dataToFilter }}</p>
   <br />
   <h5>Data filtered by term: world:</h5>
-  <p>{{ dataToFilter | filterTerm : "world" }}</p>
+  <p>{{ dataToFilter | filterTerm: "world" }}</p>
 </app-container>

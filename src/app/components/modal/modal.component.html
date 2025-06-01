@@ -1,13 +1,13 @@
-@if(modalService.isModalVisible()) {
-<div @openClose class="modal">
-  <div class="modal_content">
-    <div class="modal_header">
-      <h3 class="modal_title">{{ modalTitle() }}</h3>
-    </div>
-    <div class="modal_footer">
-      <button (click)="modalService.closeModal()">&times;</button>
+@if (modalService.isModalVisible()) {
+  <div @openClose class="modal">
+    <div class="modal_content">
+      <div class="modal_header">
+        <h3 class="modal_title">{{ modalTitle() }}</h3>
+      </div>
+      <div class="modal_footer">
+        <button (click)="modalService.closeModal()">&times;</button>
+      </div>
     </div>
   </div>
-</div>
-<div class="overlay"></div>
+  <div class="overlay"></div>
 }

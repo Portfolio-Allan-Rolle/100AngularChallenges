@@ -12,6 +12,10 @@
   vertical-align: baseline;
   border-radius: 0.25rem;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &.primary {
     color: #fff;
     background-color: #007bff;
@@ -39,5 +43,13 @@
 
   &_icon {
     margin-right: 5px;
+  }
+
+  &_close {
+    background: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
   }
 }

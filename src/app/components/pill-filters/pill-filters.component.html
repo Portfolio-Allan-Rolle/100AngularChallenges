@@ -1,0 +1,32 @@
+@let selectedPills = this.selectedPills();
+@let unSelectedPills = this.unSelectedPills();
+
+@if (selectedPills.length > 0) {
+  <div>Pills selected:</div>
+}
+@if (selectedPills.length > 0) {
+  @for (label of selectedPills; track $index) {
+    <app-pill
+      [closeButton]="true"
+      [label]="label"
+      [type]="enumPillsLabel.PRIMARY"
+      (onRemove)="onRemovePill(label)"
+    ></app-pill
+    ><br />
+  }
+  <div>
+    <hr />
+  </div>
+}
+
+<div>
+  <div>Select a pill to add:</div>
+  @for (label of unSelectedPills; track $index) {
+    <app-pill
+      [label]="label"
+      [type]="enumPillsLabel.PRIMARY"
+      (onSelect)="onAddPill(label)"
+    ></app-pill
+    ><br />
+  }
+</div>

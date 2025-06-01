@@ -1,13 +1,13 @@
 <div class="tabs">
   <header class="tabs_header">
-    @for(item of data(); track item; let index = $index) {
-    <button
-      class="tabs_button"
-      [class.selected]="index === currentSelectionIndex()"
-      (click)="onSelectionChange($index)"
-    >
-      Tab {{ $index + 1 }}
-    </button>
+    @for (item of data(); track item; let index = $index) {
+      <button
+        class="tabs_button"
+        [class.selected]="index === currentSelectionIndex()"
+        (click)="onSelectionChange($index)"
+      >
+        Tab {{ $index + 1 }}
+      </button>
     }
   </header>
   <div>

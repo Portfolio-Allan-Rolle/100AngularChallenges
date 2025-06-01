@@ -2,16 +2,16 @@
 <div>
   <select (change)="onSelectingContinent($event)">
     <option selected disabled value="undefined">Select a continent</option>
-    @for(continent of continents; track continent) {
-    <option [value]="continent">{{ continent }}</option>
+    @for (continent of continents; track continent) {
+      <option [value]="continent">{{ continent }}</option>
     }
   </select>
 </div>
 <div>
   <select (change)="onSelectingCountry($event)">
     <option selected disabled value="undefined">Select a country</option>
-    @for(country of countries(); track country.name) {
-    <option [value]="country.name">{{ country.name }}</option>
+    @for (country of countries(); track country.name) {
+      <option [value]="country.name">{{ country.name }}</option>
     }
   </select>
 </div>

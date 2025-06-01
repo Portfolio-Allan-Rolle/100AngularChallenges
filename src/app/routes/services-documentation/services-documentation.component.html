@@ -6,18 +6,19 @@
 </app-container>
 
 <app-container [title]="'Services'">
-  @if(users()) {
-  <div>
-    <label for="users">Change User Id:</label>
-    <select id="users" (change)="onChangeUserId($event)">
-      Change Id: @for(user of users(); track user.id) {
-      <option [value]="user.id">{{ user.id }}</option>
-      }
-    </select>
-  </div>
+  @if (users()) {
+    <div>
+      <label for="users">Change User Id:</label>
+      <select id="users" (change)="onChangeUserId($event)">
+        Change Id:
+        @for (user of users(); track user.id) {
+          <option [value]="user.id">{{ user.id }}</option>
+        }
+      </select>
+    </div>
   }
   <p>{{ mapData(currentUser()) | json }}</p>
-  @if(error()) {
-  <p>{{ error() }}</p>
+  @if (error()) {
+    <p>{{ error() }}</p>
   }
 </app-container>

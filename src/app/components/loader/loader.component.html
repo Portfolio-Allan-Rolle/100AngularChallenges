@@ -1,10 +1,11 @@
-@if(isLoaderVisible()){
-<div class="loader">
-  @if(loaderType() == enum.CIRCULAR) {
-  <div class="loader_spinner"></div>
-  } @if(loaderType() == enum.TEXT) {
-  <div class="loader_text"></div>
-  }
-  <button class="loader_button" (click)="hideLoader()">Hide Loader</button>
-</div>
+@if (isLoaderVisible()) {
+  <div class="loader">
+    @if (loaderType() == enum.CIRCULAR) {
+      <div class="loader_spinner"></div>
+    }
+    @if (loaderType() == enum.TEXT) {
+      <div class="loader_text"></div>
+    }
+    <button class="loader_button" (click)="hideLoader()">Hide Loader</button>
+  </div>
 }

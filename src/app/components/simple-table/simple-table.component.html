@@ -1,23 +1,23 @@
-@let data = this.data(); @if(data.length > 0) {
-<table>
-  <thead>
-    <tr>
-      @for(item of data[0] | keyvalue; track item) {
-      <th>{{ item.key }}</th>
+@let data = this.data();
+@if (data.length > 0) {
+  <table>
+    <thead>
+      <tr>
+        @for (item of data[0] | keyvalue; track item) {
+          <th>{{ item.key }}</th>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of data; track item) {
+        <tr>
+          @for (i of item | keyvalue; track i) {
+            <th>{{ i.value }}</th>
+          }
+        </tr>
       }
-    </tr>
-  </thead>
-  <tbody>
-    @for(item of data; track item) {
-    <tr>
-      @for(i of item | keyvalue; track i;) {
-      <th>{{ i.value }}</th>
-      }
-    </tr>
-    }
-  </tbody>
-</table>
-}
-@else {
+    </tbody>
+  </table>
+} @else {
   <p>There are no items.</p>
 }

@@ -13,16 +13,17 @@
   </div>
   <div class="search_bottom">
     <ul class="search_list">
-      @for(item of dataSearch() | filterTerm:term(); track item) {
-      @if(showSearchResults()) {
-      <li
-        class="search_item"
-        (keyup)="onSearchItemSelection(item)"
-        (click)="onSearchItemSelection(item)"
-      >
-        {{ item }}
-      </li>
-      } }
+      @for (item of dataSearch() | filterTerm: term(); track item) {
+        @if (showSearchResults()) {
+          <li
+            class="search_item"
+            (keyup)="onSearchItemSelection(item)"
+            (click)="onSearchItemSelection(item)"
+          >
+            {{ item }}
+          </li>
+        }
+      }
     </ul>
   </div>
 </div>

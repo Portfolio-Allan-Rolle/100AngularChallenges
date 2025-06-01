@@ -1,14 +1,16 @@
-@if(this.reviewNumber() < 0 || this.reviewNumber() > 5) {
-<p>Number can't be negative or number can't exceed {{ this.limit }}</p>
-}@else {
-<p>Review: {{ reviewNumber() }}</p>
-<ul>
-  @for(i of starsFilled(); track i.id) {
-  <fa-icon [icon]="i.icon"></fa-icon>
-  } @for(j of starsFilledHalf(); track j.id) {
-  <fa-icon [icon]="j.icon"></fa-icon>
-  } @for(k of starsFilledEmpty(); track k.id) {
-  <fa-icon class="empty" [icon]="k.icon"></fa-icon>
-  }
-</ul>
+@if (this.reviewNumber() < 0 || this.reviewNumber() > 5) {
+  <p>Number can't be negative or number can't exceed {{ this.limit }}</p>
+} @else {
+  <p>Review: {{ reviewNumber() }}</p>
+  <ul>
+    @for (i of starsFilled(); track i.id) {
+      <fa-icon [icon]="i.icon"></fa-icon>
+    }
+    @for (j of starsFilledHalf(); track j.id) {
+      <fa-icon [icon]="j.icon"></fa-icon>
+    }
+    @for (k of starsFilledEmpty(); track k.id) {
+      <fa-icon class="empty" [icon]="k.icon"></fa-icon>
+    }
+  </ul>
 }

@@ -1,5 +1,10 @@
 <div>
   <app-container [title]="'Component'">
+    <app-pill-filters
+      [labels]="['FL', 'CA', 'TN', 'OR', 'WA']"
+    ></app-pill-filters>
+  </app-container>
+  <app-container [title]="'Component'">
     <div>
       <app-pill
         [label]="'Primary'"
@@ -73,18 +78,18 @@
 
   <app-container [title]="'Component'">
     @defer {
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
-      nunc non luctus sagittis, neque turpis rutrum lacus, quis malesuada tortor
-      ante vel eros. Suspendisse aliquet posuere mauris, vel mattis enim
-      elementum ac. Fusce feugiat tortor nec efficitur accumsan. Nam maximus
-      fringilla tellus. In dapibus ornare viverra. Donec interdum varius nisl,
-      et malesuada velit luctus at. Praesent ex urna, rhoncus fermentum
-      efficitur ac, maximus in orci. Mauris faucibus neque malesuada nisl
-      pretium interdum.
-    </p>
-    }@placeholder (minimum 2000ms) {
-    <div appSkeleton [width]="'100%'" [heigth]="'50px'"></div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
+        nunc non luctus sagittis, neque turpis rutrum lacus, quis malesuada
+        tortor ante vel eros. Suspendisse aliquet posuere mauris, vel mattis
+        enim elementum ac. Fusce feugiat tortor nec efficitur accumsan. Nam
+        maximus fringilla tellus. In dapibus ornare viverra. Donec interdum
+        varius nisl, et malesuada velit luctus at. Praesent ex urna, rhoncus
+        fermentum efficitur ac, maximus in orci. Mauris faucibus neque malesuada
+        nisl pretium interdum.
+      </p>
+    } @placeholder (minimum 2000ms) {
+      <div appSkeleton [width]="'100%'" [heigth]="'50px'"></div>
     }
   </app-container>
 

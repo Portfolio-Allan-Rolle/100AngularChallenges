@@ -1,13 +1,13 @@
 <div>
   <div class="group">
-    @for(item of data(); track item.id) {
-    <button
-      (click)="onSelectItem(item)"
-      [class.active]="item.id === selection()?.id"
-      class="group_button"
-    >
-      {{ item.title }}
-    </button>
+    @for (item of data(); track item.id) {
+      <button
+        (click)="onSelectItem(item)"
+        [class.active]="item.id === selection()?.id"
+        class="group_button"
+      >
+        {{ item.title }}
+      </button>
     }
   </div>
   <p>Current selection: {{ selection()?.title }}</p>

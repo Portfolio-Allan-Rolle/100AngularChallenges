@@ -6,9 +6,23 @@
   [class.danger]="type() == enumPillType.DANGER"
   [class.warning]="type() == enumPillType.WARNING"
   [class.info]="type() == enumPillType.INFO"
+  [class.pointer-events-none]="closeButton()"
+  (click)="onSelectPill(label())"
+  (keyup)="onSelectPill(label())"
 >
-  @if(icon()) {
-  <img class="pill_icon" width="20" height="20" src="{{ icon() }}" alt="icon" />
+  @if (icon()) {
+    <img
+      class="pill_icon"
+      width="20"
+      height="20"
+      src="{{ icon() }}"
+      alt="icon"
+    />
   }
   <span>{{ label() }}</span>
+  @if (closeButton()) {
+    <button class="pill_close" (click)="onRemovePill($event, label())">
+      X
+    </button>
+  }
 </span>
