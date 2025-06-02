@@ -1,0 +1,18 @@
+.template {
+  background-color: #d4d9ed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &_message {
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  &_redirect {
+    font-family: 1.2rem;
+  }
+}

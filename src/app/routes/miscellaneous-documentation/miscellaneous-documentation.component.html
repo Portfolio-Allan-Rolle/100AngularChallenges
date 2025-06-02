@@ -1,4 +1,8 @@
 <app-container [title]="'Miscellaneous'">
+  <a routerLink="/rxjs">Go to a non-existing page</a>
+</app-container>
+
+<app-container [title]="'Miscellaneous'">
   <form class="form" [formGroup]="form">
     <input formControlName="name" class="form_input" type="text" />
     <button (click)="onSubmit()" type="submit">Submit</button>

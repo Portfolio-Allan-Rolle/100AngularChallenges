@@ -61,3 +61,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 49. Build a fieldset toggle that can be collapsed and passes in content.
 50. Build a pill component that takes in a label, an optional icon and a style type.
 51. Build a pill filters component that takes in an array of labels. When clicked notifies parent.
+52. Build a 404 Not Found component that redirects to the home page after 10 seconds.

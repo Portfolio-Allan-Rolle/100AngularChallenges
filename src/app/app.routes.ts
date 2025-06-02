@@ -27,7 +27,7 @@ export const routes: Route[] = [
     path: 'pipes',
     loadComponent: () =>
       import('./routes/pipes-documentation/pipes-documentation.component').then(
-        (m) => m.PipesDocumentationComponent
+        (m) => m.PipesDocumentationComponent,
       ),
   },
   {
@@ -36,6 +36,13 @@ export const routes: Route[] = [
       import(
         './routes/miscellaneous-documentation/miscellaneous-documentation.component'
       ).then((m) => m.MiscellaneousDocumentationComponent),
-      canDeactivate: [canDeactivateGuard]
+    canDeactivate: [canDeactivateGuard],
+  },
+  {
+    path: '**',
+    loadComponent: () =>
+      import('./routes/not-found/not-found.component').then(
+        (m) => m.NotFoundComponent,
+      ),
   },
 ];
