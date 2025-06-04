@@ -6,16 +6,18 @@ import { FilterTermPipe } from '../../pipes/filter-term.pipe';
 import { SortPipe } from '../../pipes/sort.pipe';
 import { sortType } from '../../models';
 import { ContainerComponent } from '../../components/container/container.component';
+import { SortByKeyPipe } from '../../pipes/sort-by-key.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    SortByKeyPipe,
     TruncatePipe,
     CreditCardFormatterPipe,
     FlattenPipe,
     FilterTermPipe,
     SortPipe,
-    ContainerComponent
+    ContainerComponent,
   ],
   templateUrl: './pipes-documentation.component.html',
   styleUrl: './pipes-documentation.component.scss',
@@ -71,5 +73,14 @@ export class PipesDocumentationComponent {
     'tea',
     'decision',
     'appointment',
+  ];
+
+  dataToSortByKey = [
+    { content: 'Courses' },
+    { content: 'Youtube' },
+    { content: 'History' },
+    { content: 'Travel' },
+    { content: 'University' },
+    { content: 'Internet' },
   ];
 }

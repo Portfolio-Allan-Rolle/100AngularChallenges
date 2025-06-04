@@ -65,3 +65,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 53. Build a password component with a progress bar for how the password is validating.
 54. Build a service that updates the title when routes are changed.
 55. Create an observable that emits the characters A, B and C.
+56. Create a pipe that sorts an array of objects. Pass in the key and direction to sort by.

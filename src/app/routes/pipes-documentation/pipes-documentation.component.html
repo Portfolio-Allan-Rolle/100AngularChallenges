@@ -1,4 +1,28 @@
 <app-container [title]="'Pipe'">
+  <p>Sorted Descending</p>
+  <br />
+  <ul>
+    @for (
+      item of dataToSortByKey | sortByKey: "content" : sortEnum.DESC;
+      track $index
+    ) {
+      <li>{{ item["content"] }}</li>
+    }
+  </ul>
+  <br />
+  <p>Sorted Ascending</p>
+  <br />
+  <ul>
+    @for (
+      item of dataToSortByKey | sortByKey: "content" : sortEnum.ASC;
+      track $index
+    ) {
+      <li>{{ item["content"] }}</li>
+    }
+  </ul>
+</app-container>
+
+<app-container [title]="'Pipe'">
   <p>{{ dataToSort | sort: sortEnum.DESC }}</p>
 </app-container>
 
