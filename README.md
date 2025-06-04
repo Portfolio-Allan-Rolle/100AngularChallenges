@@ -2,9 +2,10 @@
 
 100 Challenges to learn Angular
 
-Based on the Udemy course by Dylan Israel
+Sources:
 
-Get the course [here](https://www.udemy.com/course/100-angular-challenge/) !
+Dylan Israel Udemy course [here](https://www.udemy.com/course/100-angular-challenge/)  
+RxJs Challenges [Github Link](https://github.com/HBTGmbH/rxjs-challenges)
 
 Lien pour visualiser le projet dans la description à droite ➡️
 
