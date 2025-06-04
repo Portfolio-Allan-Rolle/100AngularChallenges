@@ -64,3 +64,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 52. Build a 404 Not Found component that redirects to the home page after 10 seconds.
 53. Build a password component with a progress bar for how the password is validating.
 54. Build a service that updates the title when routes are changed.
+55. Create an observable that emits the characters A, B and C.

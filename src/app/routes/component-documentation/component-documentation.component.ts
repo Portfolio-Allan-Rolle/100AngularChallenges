@@ -38,11 +38,12 @@ import { PillComponent } from '../../components/pill/pill.component';
 import { ContainerComponent } from '../../components/container/container.component';
 import { PillFiltersComponent } from '../../components/pill-filters/pill-filters.component';
 import { PasswordComponent } from '../../components/password/password.component';
-import { TitleService } from '../../services/title.service';
+import { RxjsChallengesComponent } from '../../components/rxjs-challenges/rxjs-challenges.component';
 
 @Component({
   selector: 'app-component-documentation',
   imports: [
+    RxjsChallengesComponent,
     PillFiltersComponent,
     FieldsetToggleComponent,
     BottomSheetComponent,
@@ -82,7 +83,7 @@ import { TitleService } from '../../services/title.service';
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
 })
-export class ComponentDocumentationComponent{
+export class ComponentDocumentationComponent {
   public bottomSheetService = inject(BottomSheetService);
   public buttonGroupData: IButtonGroup[] = [
     { id: 1, title: 'Bold', isActive: false },
