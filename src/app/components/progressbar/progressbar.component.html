@@ -3,13 +3,15 @@
 </div>
 <div class="progress">
   <span
-    [ngStyle]="{ 'width.%': valueNow() }"
+    [ngStyle]="{ 'width.%': value() }"
     id="progress"
     role="progressbar"
-    [attr.aria-valueNow]="valueNow()"
+    [attr.aria-valueNow]="value()"
     aria-valuemin="0"
-    aria-valuemax="100"
+    [attr.aria-valuemax]="maxValue()"
     class="progress_bar"
   ></span>
 </div>
-<button (click)="update()">Update</button>
+@if (withUpdateButton()) {
+  <button (click)="update()">Update</button>
+}

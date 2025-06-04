@@ -37,6 +37,7 @@ import { FieldsetToggleComponent } from '../../components/fieldset-toggle/fields
 import { PillComponent } from '../../components/pill/pill.component';
 import { ContainerComponent } from '../../components/container/container.component';
 import { PillFiltersComponent } from '../../components/pill-filters/pill-filters.component';
+import { PasswordComponent } from "../../components/password/password.component";
 
 @Component({
   selector: 'app-component-documentation',
@@ -75,7 +76,8 @@ import { PillFiltersComponent } from '../../components/pill-filters/pill-filters
     SocialMediaBarComponent,
     PillComponent,
     ContainerComponent,
-  ],
+    PasswordComponent
+],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
 })

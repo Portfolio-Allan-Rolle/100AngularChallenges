@@ -8,7 +8,9 @@ import { Component, input, output } from '@angular/core';
   styleUrl: './progressbar.component.scss',
 })
 export class ProgressbarComponent {
-  valueNow = input.required<number>();
+  value = input.required<number>();
+  maxValue = input(100);
+  withUpdateButton = input<boolean>();
   onUpdate = output();
   update() {
     this.onUpdate.emit();

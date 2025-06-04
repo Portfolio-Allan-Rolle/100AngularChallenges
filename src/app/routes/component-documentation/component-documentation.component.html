@@ -1,5 +1,8 @@
 <div>
   <app-container [title]="'Component'">
+    <app-password></app-password>
+  </app-container>
+  <app-container [title]="'Component'">
     <app-pill-filters
       [labels]="['FL', 'CA', 'TN', 'OR', 'WA']"
     ></app-pill-filters>
@@ -183,7 +186,8 @@
 
   <app-container [title]="'Component'">
     <app-progressbar
-      [valueNow]="progressBarValue()"
+      [value]="progressBarValue()"
+      [withUpdateButton]="true"
       (onUpdate)="changeProgressBarValue()"
     ></app-progressbar>
   </app-container>
