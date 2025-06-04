@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { CardComponent } from '../../components/card/card.component';
 import { AccordionComponent } from '../../components/accordion/accordion.component';
 import { ProgressbarComponent } from '../../components/progressbar/progressbar.component';
@@ -37,7 +37,8 @@ import { FieldsetToggleComponent } from '../../components/fieldset-toggle/fields
 import { PillComponent } from '../../components/pill/pill.component';
 import { ContainerComponent } from '../../components/container/container.component';
 import { PillFiltersComponent } from '../../components/pill-filters/pill-filters.component';
-import { PasswordComponent } from "../../components/password/password.component";
+import { PasswordComponent } from '../../components/password/password.component';
+import { TitleService } from '../../services/title.service';
 
 @Component({
   selector: 'app-component-documentation',
@@ -76,12 +77,12 @@ import { PasswordComponent } from "../../components/password/password.component"
     SocialMediaBarComponent,
     PillComponent,
     ContainerComponent,
-    PasswordComponent
-],
+    PasswordComponent,
+  ],
   templateUrl: './component-documentation.component.html',
   styleUrl: './component-documentation.component.scss',
 })
-export class ComponentDocumentationComponent {
+export class ComponentDocumentationComponent{
   public bottomSheetService = inject(BottomSheetService);
   public buttonGroupData: IButtonGroup[] = [
     { id: 1, title: 'Bold', isActive: false },

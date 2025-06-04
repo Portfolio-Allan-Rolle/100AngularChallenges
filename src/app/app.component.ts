@@ -4,6 +4,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { RouterOutlet } from '@angular/router';
 import { ModalService } from './services/modal.service';
 import { FooterComponent } from './components/footer/footer.component';
+import { TitleService } from './services/title.service';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +14,9 @@ import { FooterComponent } from './components/footer/footer.component';
 })
 export class AppComponent {
   isModalVisible = inject(ModalService).isModalVisible;
+  public titleService = inject(TitleService);
+
+  ngOnInit(): void {
+    this.titleService.init();
+  }
 }
