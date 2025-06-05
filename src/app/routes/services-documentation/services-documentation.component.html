@@ -1,4 +1,11 @@
 <app-container [title]="'Services'">
+  <div>{{ data$ | async | json }}</div>
+  <button (click)="updateLocalStorageState()">
+    Update local storage state
+  </button>
+</app-container>
+
+<app-container [title]="'Services'">
   <button (click)="showSnackBar('Hello from page services')">
     Call Snack Bar !
   </button>

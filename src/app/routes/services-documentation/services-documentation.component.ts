@@ -13,6 +13,7 @@ import { IUser } from '../../models';
 import { SnackBarService } from '../../services/snack-bar.service';
 import { SnackBarComponent } from '../../components/snack-bar/snack-bar.component';
 import { ContainerComponent } from '../../components/container/container.component';
+import { LocalStorageService } from '../../services/local-storage.service';
 
 @Component({
   selector: 'app-services-documentation',
@@ -21,6 +22,8 @@ import { ContainerComponent } from '../../components/container/container.compone
   styleUrl: './services-documentation.component.scss',
 })
 export class ServicesDocumentationComponent implements OnInit, OnDestroy {
+  localStorageService = inject(LocalStorageService);
+  data$ = this.localStorageService.data$;
   snackBarService = inject(SnackBarService);
   userService = inject(UsersService);
   usersLength = this.userService.getAllUsers();
@@ -28,7 +31,7 @@ export class ServicesDocumentationComponent implements OnInit, OnDestroy {
   users = signal(<IUser[]>[]);
   currentUserId = signal(1);
   currentUser = computed(() =>
-    this.users().filter((user: IUser) => user.id === this.currentUserId())
+    this.users().filter((user: IUser) => user.id === this.currentUserId()),
   );
   error = signal<null | string>(null);
 
@@ -48,12 +51,17 @@ export class ServicesDocumentationComponent implements OnInit, OnDestroy {
     this.snackBarService.animateSnackBar(message);
   }
 
+  updateLocalStorageState() {
+    this.localStorageService.setItem('state', { name: 'allan' });
+  }
+
   ngOnInit(): void {
     this.users$ = this.userService.getAllUsers().subscribe({
       next: (res) => this.users.set(res),
       error: (err) => this.error.set(err.message),
       complete: () => console.log('request complete'),
     });
+    console.log(this.localStorageService.getItem());
   }
 
   ngOnDestroy(): void {
