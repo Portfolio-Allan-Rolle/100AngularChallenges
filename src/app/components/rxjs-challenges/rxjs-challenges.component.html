@@ -1,2 +1,20 @@
-<p>RxJs Challenges</p>
-<div>{{ characters$ | async }}</div>
+<section>
+  <h1>RxJs Challenges</h1>
+  <app-container [title]="'Emits the characters A, B and C'">
+    <div>{{ characters$ | async }}</div>
+  </app-container>
+  <app-container
+    [title]="'Emits every printable ASCII character in ascending order'"
+  >
+    <button (click)="canPrintASCIICharacters.set(true)">
+      Click to print ASCII characters
+    </button>
+    <ul style="column-count: 15">
+      @if (canPrintASCIICharacters()) {
+        @for (item of asciiNumbers(); track $index) {
+          <li>{{ item.key }} - {{ item.value }}</li>
+        }
+      }
+    </ul>
+  </app-container>
+</section>
