@@ -19,7 +19,16 @@
       }
     </ul>
   </app-container>
+
   <app-container [title]="'Create an observable that emits all even integers.'">
     {{ evenIntegers$ | async }}
+  </app-container>
+
+  <app-container
+    [title]="
+      'Create an observable that emits all even integers until it reaches the number 100'
+    "
+  >
+    <div>{{ evenIntegersUpTo100$ | async | json }}</div>
   </app-container>
 </section>
