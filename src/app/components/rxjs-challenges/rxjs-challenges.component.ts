@@ -1,16 +1,6 @@
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
-import {
-  filter,
-  from,
-  interval,
-  map,
-  of,
-  take,
-  takeUntil,
-  tap,
-  toArray,
-} from 'rxjs';
+import { filter, from, interval, map, of, take, tap, toArray } from 'rxjs';
 import { ContainerComponent } from '../container/container.component';
 
 @Component({

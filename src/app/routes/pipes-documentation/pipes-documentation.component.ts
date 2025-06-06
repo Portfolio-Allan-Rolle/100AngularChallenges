@@ -7,10 +7,12 @@ import { SortPipe } from '../../pipes/sort.pipe';
 import { sortType } from '../../models';
 import { ContainerComponent } from '../../components/container/container.component';
 import { SortByKeyPipe } from '../../pipes/sort-by-key.pipe';
+import { RichTextPipe } from '../../pipes/rich-text.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    RichTextPipe,
     SortByKeyPipe,
     TruncatePipe,
     CreditCardFormatterPipe,
@@ -23,6 +25,8 @@ import { SortByKeyPipe } from '../../pipes/sort-by-key.pipe';
   styleUrl: './pipes-documentation.component.scss',
 })
 export class PipesDocumentationComponent {
+  richTextPipeSample = '<p>Hello World !</p>';
+
   dataTruncatePipe =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar arcu at turpis molestie aliquam. Suspendisse imperdiet nisi eu n.';
 
