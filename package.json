@@ -6,7 +6,12 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "test:coverage": "ng test --no-watch --code-coverage",
+    "lint": "ng lint",
+    "lint:fix": "ng lint --fix",
+    "e2e": "ng e2e",
+    "clean": "rimraf dist & rimraf coverage"
   },
   "private": true,
   "dependencies": {
