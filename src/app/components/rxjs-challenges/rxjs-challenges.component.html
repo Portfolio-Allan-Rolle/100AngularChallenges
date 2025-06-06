@@ -1,8 +1,10 @@
 <section>
   <h1>RxJs Challenges</h1>
+
   <app-container [title]="'Emits the characters A, B and C'">
     <div>{{ characters$ | async }}</div>
   </app-container>
+
   <app-container
     [title]="'Emits every printable ASCII character in ascending order'"
   >
@@ -16,5 +18,8 @@
         }
       }
     </ul>
+  </app-container>
+  <app-container [title]="'Create an observable that emits all even integers.'">
+    {{ evenIntegers$ | async }}
   </app-container>
 </section>

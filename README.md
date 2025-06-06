@@ -72,3 +72,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 59. Route params.
 60. Common scripts.
 61. Active Route UI.
+62. Create an observable that emits all even integers.

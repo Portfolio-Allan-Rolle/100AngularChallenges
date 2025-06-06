@@ -1,11 +1,11 @@
 import { Component, input, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import { LoaderService } from '../../services/loader.service';
 import { ModalService } from '../../services/modal.service';
 
 @Component({
   selector: 'app-toolbar',
-  imports: [RouterLink],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './toolbar.component.html',
   styleUrl: './toolbar.component.scss',
 })
