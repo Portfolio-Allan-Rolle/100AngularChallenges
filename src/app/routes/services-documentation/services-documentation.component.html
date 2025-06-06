@@ -1,4 +1,9 @@
 <app-container [title]="'Services'">
+  <div>{{ userExample() | json }}</div>
+  <button (click)="switchPage()">Go to page services with id parameter</button>
+</app-container>
+
+<app-container [title]="'Services'">
   <div>{{ data$ | async | json }}</div>
   <button (click)="updateLocalStorageState()">
     Update local storage state

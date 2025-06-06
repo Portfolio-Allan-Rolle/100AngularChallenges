@@ -12,4 +12,8 @@ export class UsersService {
   getAllUsers() {
     return this.http.get<IUser[]>(this.url);
   }
+
+  getUser(id: number) {
+    return this.http.get<IUser[]>(`${this.url}/${id}`);
+  }
 }

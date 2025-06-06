@@ -23,6 +23,16 @@ export const routes: Route[] = [
     },
   },
   {
+    path: 'services/:id',
+    loadComponent: () =>
+      import(
+        './routes/services-documentation/services-documentation.component'
+      ).then((m) => m.ServicesDocumentationComponent),
+    data: {
+      title: 'Services',
+    },
+  },
+  {
     path: 'services',
     loadComponent: () =>
       import(
