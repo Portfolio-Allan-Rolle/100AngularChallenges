@@ -40,6 +40,9 @@
   &_link {
     color: inherit;
     text-decoration: none;
+    &.active {
+      text-decoration: underline;
+    }
     &:hover {
       text-decoration: underline;
     }

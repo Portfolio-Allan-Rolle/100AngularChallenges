@@ -7,7 +7,7 @@ import {
   signal,
 } from '@angular/core';
 import { UsersService } from '../../services/users.service';
-import { map, mergeMap, Subscription } from 'rxjs';
+import { filter, map, mergeMap, startWith, Subscription } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { IUser } from '../../models';
 import { SnackBarService } from '../../services/snack-bar.service';
@@ -72,6 +72,7 @@ export class ServicesDocumentationComponent implements OnInit, OnDestroy {
     });
     this.route.params
       .pipe(
+        filter((params) => params['id'] != null),
         map((params) => params['id']),
         mergeMap((id) => this.userService.getUser(id)),
       )
