@@ -1,3 +1,9 @@
+<app-container [title]="'Directives'">
+  <div>
+    <input type="text" placeholder="The focus in on me" appAutoFocus />
+  </div>
+</app-container>
+
 <app-container [title]="'Directive'">
   <div class="objects">
     <button (click)="isHexagonVisible.set(!isHexagonVisible())">
