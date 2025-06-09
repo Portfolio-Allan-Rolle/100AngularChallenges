@@ -1,9 +1,10 @@
 import { Component, input, signal } from '@angular/core';
 import { IButtonGroup } from '../../models';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-button-toggle',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './button-toggle.component.html',
   styleUrl: './button-toggle.component.scss',
 })

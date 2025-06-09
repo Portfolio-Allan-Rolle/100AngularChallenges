@@ -1,7 +1,8 @@
-<div>
-  <div class="group">
+<div [attr.data-container]="'container'">
+  <div class="group" [attr.data-group]="'group'">
     @for (item of data(); track item.id) {
       <button
+        [attr.data-button]="'button'"
         (click)="onSelectItem(item)"
         [class.active]="item.id === selection()?.id"
         class="group_button"
@@ -10,5 +11,9 @@
       </button>
     }
   </div>
-  <p>Current selection: {{ selection()?.title }}</p>
+  @if (selection()) {
+    <p [attr.data-selection-display]="'selection-display'">
+      Current selection: {{ selection()?.title }}
+    </p>
+  }
 </div>
