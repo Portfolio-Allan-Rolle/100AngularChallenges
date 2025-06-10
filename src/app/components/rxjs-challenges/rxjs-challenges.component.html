@@ -86,4 +86,24 @@
     /><br />
     <p>{{ textFromInput$ | async }}</p>
   </app-container>
+
+  <app-container
+    [title]="
+      'Create an observable that emits user input from a text field, but only emit a value after 300 ms'
+    "
+  >
+    <input
+      #inputRef2
+      type="text"
+      placeholder="Type something..."
+      (input)="textFromInput2$.next(inputRef2.value)"
+    /><br />
+    @if (textFromInput2$ | async) {
+      <p>
+        Value: {{ textFromInput2().value }} : Timestamp:{{
+          textFromInput2().timestamp
+        }}
+      </p>
+    }
+  </app-container>
 </section>

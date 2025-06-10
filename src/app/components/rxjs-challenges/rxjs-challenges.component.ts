@@ -25,6 +25,7 @@ import {
   tap,
   timestamp,
   toArray,
+  delay,
 } from 'rxjs';
 import { ContainerComponent } from '../container/container.component';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -127,4 +128,9 @@ export class RxjsChallengesComponent {
   }
 
   textFromInput$ = new BehaviorSubject('');
+
+  textFromInput2$ = new BehaviorSubject<null | string>(null);
+  textFromInput2 = toSignal(
+    this.textFromInput2$.pipe(delay(1000), timestamp(), tap(console.log)),
+  );
 }
