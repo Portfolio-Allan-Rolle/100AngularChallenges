@@ -3,15 +3,19 @@ import { Component, inject, signal } from '@angular/core';
 import {
   BehaviorSubject,
   catchError,
+  EMPTY,
   filter,
   forkJoin,
   from,
   interval,
   map,
   of,
+  Subject,
   switchMap,
   take,
+  takeUntil,
   tap,
+  timestamp,
   toArray,
 } from 'rxjs';
 import { ContainerComponent } from '../container/container.component';
@@ -89,5 +93,20 @@ export class RxjsChallengesComponent {
   counter$ = new BehaviorSubject(0);
   counterIncrease(): void {
     this.counter$.next(this.counter$.value + 1);
+  }
+
+  stopDateDisplay$ = new Subject<any>();
+  currentTimeStamp$ = new Subject<any>();
+  currentTime = interval(1000)
+    .pipe(takeUntil(this.stopDateDisplay$), timestamp())
+    .subscribe({
+      next: (v) => {
+        const { timestamp } = v;
+        const time = `${new Date(timestamp).getHours()}:${new Date(timestamp).getMinutes()}:${new Date(timestamp).getSeconds()}`;
+        this.currentTimeStamp$.next(time);
+      },
+    });
+  stopWatch() {
+    this.stopDateDisplay$.next(EMPTY);
   }
 }

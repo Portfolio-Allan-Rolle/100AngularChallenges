@@ -83,3 +83,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 70. Create an observable that requests a post using dummyjson.com and logs the result.
 71. Create an observable that requests 3 post from an API in parallel and emits once all 3 articles are loaded.
 72. Create an observable that emits a value each time a user click a button.
+73. Create an observable that emits the current time stamp until the user clicks this button.

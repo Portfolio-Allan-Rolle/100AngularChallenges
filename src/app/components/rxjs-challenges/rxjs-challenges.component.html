@@ -64,4 +64,13 @@
     <button (click)="counterIncrease()">Increase counter:</button><br />
     <span>Counter: {{ counter$ | async }}</span>
   </app-container>
+
+  <app-container
+    [title]="
+      'Create an observable that emits the current time stamp until the user clicks this button.'
+    "
+  >
+    <button (click)="stopWatch()">Stop clock</button><br />
+    <span>Current time: {{ currentTimeStamp$ | async }}</span>
+  </app-container>
 </section>
