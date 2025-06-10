@@ -79,3 +79,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 66. Testing introduction.
 67. Component testing.
 68. Pipe testing.
+69. Directive testing.
