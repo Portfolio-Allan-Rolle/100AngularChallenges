@@ -1,7 +1,20 @@
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
-import { filter, from, interval, map, of, take, tap, toArray } from 'rxjs';
+import {
+  catchError,
+  filter,
+  from,
+  interval,
+  map,
+  of,
+  switchMap,
+  take,
+  tap,
+  toArray,
+} from 'rxjs';
 import { ContainerComponent } from '../container/container.component';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { fromFetch } from 'rxjs/fetch';
 
 @Component({
   selector: 'app-rxjs-challenges',
@@ -36,5 +49,24 @@ export class RxjsChallengesComponent {
     take(101),
     filter((n) => n % 2 == 0),
     toArray(),
+  );
+  dummyPost = toSignal(
+    fromFetch('https://dummyjson.com/posts/1').pipe(
+      switchMap((response: any) => {
+        if (response.ok) {
+          // OK return data
+          return response.json();
+        } else {
+          // Server is returning a status requiring the client to try something else.
+          return of({ error: true, message: `Error ${response.status}` });
+        }
+      }),
+      tap((response: any) => console.log(response)),
+      catchError((err) => {
+        // Network or other error, handle appropriately
+        console.error(err);
+        return of({ error: true, message: err.message });
+      }),
+    ),
   );
 }

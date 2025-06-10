@@ -31,4 +31,12 @@
   >
     <div>{{ evenIntegersUpTo100$ | async | json }}</div>
   </app-container>
+
+  <app-container
+    [title]="
+      'Create an observable that requests a post from an API and logs the result.'
+    "
+  >
+    <p>{{ dummyPost()?.body }}</p>
+  </app-container>
 </section>
