@@ -1,6 +1,7 @@
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { Component, inject, signal } from '@angular/core';
 import {
+  BehaviorSubject,
   catchError,
   filter,
   forkJoin,
@@ -84,4 +85,9 @@ export class RxjsChallengesComponent {
   dummyPosts = toSignal(
     forkJoin([this.apiCall1$, this.apiCall2$, this.apiCall3$]),
   );
+
+  counter$ = new BehaviorSubject(0);
+  counterIncrease(): void {
+    this.counter$.next(this.counter$.value + 1);
+  }
 }

@@ -55,4 +55,13 @@
       </ul>
     }
   </app-container>
+
+  <app-container
+    [title]="
+      'Create an observable that emits a value each time a user click this button.'
+    "
+  >
+    <button (click)="counterIncrease()">Increase counter:</button><br />
+    <span>Counter: {{ counter$ | async }}</span>
+  </app-container>
 </section>
