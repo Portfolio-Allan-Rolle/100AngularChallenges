@@ -1,13 +1,19 @@
 /*
 
 import { TestBed } from '@angular/core/testing';
-import { CanDeactivateFn } from '@angular/router';
+import { ActivatedRouteSnapshot, CanDeactivateFn, RouterStateSnapshot } from '@angular/router';
 
 import { canDeactivateGuard } from './can-deactivate.guard';
+import { MiscellaneousDocumentationComponent } from '../routes/miscellaneous-documentation/miscellaneous-documentation.component';
+import { Router } from '@angular/router';
 
-xdescribe('canDeactivateGuard', () => {
-  const executeGuard: CanDeactivateFn<unknown> = (...guardParameters) =>
-    //TestBed.runInInjectionContext(() => canDeactivateGuard(...guardParameters));
+fdescribe('canDeactivateGuard', () => {
+  let router!: Router;
+  let routerMock: RouterStateSnapshot = router.routerState.snapshot;
+  const executeGuard: CanDeactivateFn<boolean> = () =>
+    TestBed.runInInjectionContext(() =>
+      canDeactivateGuard(MiscellaneousDocumentationComponent, routerMock),
+    );
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
@@ -16,4 +22,5 @@ xdescribe('canDeactivateGuard', () => {
   it('should be created', () => {
     expect(executeGuard).toBeTruthy();
   });
-}); */
+});
+*/

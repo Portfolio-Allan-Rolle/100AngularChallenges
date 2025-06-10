@@ -76,5 +76,6 @@ Lien pour visualiser le projet dans la description à droite ➡️
 63. Create an observable that emits all even integers until it reaches the number 100.
 64. Create a rich text that strips out html when it is valid or empty.
 65. Create a directive that will focus an input.
-68. Testing introduction.
-69. Component testing.
+66. Testing introduction.
+67. Component testing.
+68. Pipe testing.
