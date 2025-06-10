@@ -10,6 +10,7 @@ import {
   interval,
   map,
   of,
+  repeat,
   Subject,
   switchMap,
   take,
@@ -95,10 +96,15 @@ export class RxjsChallengesComponent {
     this.counter$.next(this.counter$.value + 1);
   }
 
+  startDateDisplay$ = new Subject<any>();
   stopDateDisplay$ = new Subject<any>();
   currentTimeStamp$ = new Subject<any>();
   currentTime = interval(1000)
-    .pipe(takeUntil(this.stopDateDisplay$), timestamp())
+    .pipe(
+      takeUntil(this.stopDateDisplay$),
+      repeat({ delay: () => this.startDateDisplay$ }),
+      timestamp(),
+    )
     .subscribe({
       next: (v) => {
         const { timestamp } = v;
@@ -108,5 +114,8 @@ export class RxjsChallengesComponent {
     });
   stopWatch() {
     this.stopDateDisplay$.next(EMPTY);
+  }
+  startWatch() {
+    this.startDateDisplay$.next(EMPTY);
   }
 }
