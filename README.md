@@ -81,3 +81,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 68. Pipe testing.
 69. Directive testing.
 70. Create an observable that requests a post using dummyjson.com and logs the result.
+71. Create an observable that requests 3 post from an API in parallel and emits once all 3 articles are loaded.

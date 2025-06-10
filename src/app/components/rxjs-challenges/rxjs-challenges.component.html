@@ -39,4 +39,20 @@
   >
     <p>{{ dummyPost()?.body }}</p>
   </app-container>
+
+  <app-container
+    [title]="
+      'Create an observable that requests 3 wikipedia articles in parallel and emits once all 3 articles are loaded.'
+    "
+  >
+    @let responses = dummyPosts();
+    @if (responses) {
+      <ul>
+        @for (response of responses; track $index) {
+          <li>{{ $any(response).body }}</li>
+          <br />
+        }
+      </ul>
+    }
+  </app-container>
 </section>

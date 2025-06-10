@@ -1,8 +1,9 @@
 import { AsyncPipe, CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import {
   catchError,
   filter,
+  forkJoin,
   from,
   interval,
   map,
@@ -15,6 +16,7 @@ import {
 import { ContainerComponent } from '../container/container.component';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { fromFetch } from 'rxjs/fetch';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-rxjs-challenges',
@@ -23,6 +25,7 @@ import { fromFetch } from 'rxjs/fetch';
   styleUrl: './rxjs-challenges.component.scss',
 })
 export class RxjsChallengesComponent {
+  http = inject(HttpClient);
   characters$ = of(['A', 'B', 'C']);
   characters2$ = from(['A', 'B', 'C']).subscribe(console.log);
   canPrintASCIICharacters = signal(false);
@@ -50,8 +53,17 @@ export class RxjsChallengesComponent {
     filter((n) => n % 2 == 0),
     toArray(),
   );
+
+  endpoint1 = 'https://dummyjson.com/posts/1';
+  endpoint2 = 'https://dummyjson.com/posts/2';
+  endpoint3 = 'https://dummyjson.com/posts/3';
+
+  apiCall1$ = this.http.get<any[]>(this.endpoint1);
+  apiCall2$ = this.http.get<any[]>(this.endpoint2);
+  apiCall3$ = this.http.get<any[]>(this.endpoint3);
+
   dummyPost = toSignal(
-    fromFetch('https://dummyjson.com/posts/1').pipe(
+    fromFetch(this.endpoint1).pipe(
       switchMap((response: any) => {
         if (response.ok) {
           // OK return data
@@ -68,5 +80,8 @@ export class RxjsChallengesComponent {
         return of({ error: true, message: err.message });
       }),
     ),
+  );
+  dummyPosts = toSignal(
+    forkJoin([this.apiCall1$, this.apiCall2$, this.apiCall3$]),
   );
 }
