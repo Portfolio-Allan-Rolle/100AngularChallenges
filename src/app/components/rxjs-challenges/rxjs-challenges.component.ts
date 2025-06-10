@@ -1,11 +1,18 @@
 import { AsyncPipe, CommonModule } from '@angular/common';
-import { Component, inject, signal } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  inject,
+  signal,
+  viewChild,
+} from '@angular/core';
 import {
   BehaviorSubject,
   catchError,
   EMPTY,
   filter,
   forkJoin,
+  fromEvent,
   from,
   interval,
   map,
@@ -118,4 +125,6 @@ export class RxjsChallengesComponent {
   startWatch() {
     this.startDateDisplay$.next(EMPTY);
   }
+
+  textFromInput$ = new BehaviorSubject('');
 }

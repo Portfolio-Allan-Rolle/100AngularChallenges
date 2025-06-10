@@ -85,3 +85,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 72. Create an observable that emits a value each time a user click a button.
 73. Create an observable that emits the current time stamp until the user clicks this button.
 74. Create an observable that emits the current time stamp with a stop/reset button.
+75. Create an observable that emits user input from this text field.

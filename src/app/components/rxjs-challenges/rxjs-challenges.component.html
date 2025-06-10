@@ -70,7 +70,20 @@
       'Create an observable that emits the current time stamp until the user clicks this button.'
     "
   >
-    <button (click)="stopWatch()">Stop clock</button><button (click)="startWatch()">Start clock</button><br />
+    <button (click)="stopWatch()">Stop clock</button
+    ><button (click)="startWatch()">Start clock</button><br />
     <span>Current time: {{ currentTimeStamp$ | async }}</span>
+  </app-container>
+
+  <app-container
+    [title]="'Create an observable that emits user input from this text field'"
+  >
+    <input
+      #inputRef
+      type="text"
+      placeholder="Type something..."
+      (input)="textFromInput$.next(inputRef.value)"
+    /><br />
+    <p>{{ textFromInput$ | async }}</p>
   </app-container>
 </section>
