@@ -1,10 +1,21 @@
-<app-container [title]="'Directives'">
+<app-container
+  [title]="'Directives - Create a directive that will focus an input.'"
+>
   <div>
-    <input #inputRef type="text" placeholder="The focus in on me" appAutoFocus />
+    <input
+      #inputRef
+      type="text"
+      placeholder="The focus in on me"
+      appAutoFocus
+    />
   </div>
 </app-container>
 
-<app-container [title]="'Directive'">
+<app-container
+  [title]="
+    'Directive - Create a directive that animates an object into the viewport'
+  "
+>
   <div class="objects">
     <button (click)="isHexagonVisible.set(!isHexagonVisible())">
       Show Hexagon
@@ -19,13 +30,21 @@
   </div>
 </app-container>
 
-<app-container [title]="'Directive'">
+<app-container
+  [title]="
+    'Directive - Build a scale directive that scales an element to 1.25x its size.'
+  "
+>
   <div class="square">
     <div appScale class="square_object"></div>
   </div>
 </app-container>
 
-<app-container [title]="'Directive'">
+<app-container
+  [title]="
+    'Directive - Create a directive that debounces a click event for up to 500ms.'
+  "
+>
   <div>
     <button appDebounceClick (debounceClickFunction)="log()">
       Log 'Hello World' in the console
@@ -33,7 +52,11 @@
   </div>
 </app-container>
 
-<app-container [title]="'Directive'">
+<app-container
+  [title]="
+    'Directive - Build a ripple directive that on hover changes color and on click ripple hover the element.'
+  "
+>
   <div>
     <button class="ripple-css-only">Click Me !</button>
   </div>
@@ -45,7 +68,11 @@
 
 <div style="height: 800px"></div>
 
-<app-container [title]="'Directive'">
+<app-container
+  [title]="
+    'Directive - Create a lazy load image directive that loads an image only if it is in view.'
+  "
+>
   <div>
     <img alt="man surfing" [imageURI]="'man-surfing.jpg'" appLazyLoadImage />
   </div>
