@@ -97,3 +97,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 81. Build a pipe that reverses the characters of a string.
 82. Build a pipe that filters an array of objects based on a given property and filter value.
 83. Build a pipe that converts a value from one currency to another using a provided exchange rate.
+84. Build a pipe that formats a raw string of numbers into a well-structured phone number format (e.g., (555) 555–5555).

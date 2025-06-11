@@ -13,10 +13,12 @@ import { UppercaseFirstPipe } from '../../pipes/uppercase-first.pipe';
 import { ReverseStringPipe } from '../../pipes/reverse-string.pipe';
 import { FilterArrayPipe } from '../../pipes/filter-array.pipe';
 import { CurrencyConverterPipe } from '../../pipes/currency-converter.pipe';
+import { PhoneNumberFormatterPipe } from '../../pipes/phone-number-formatter.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    PhoneNumberFormatterPipe,
     CurrencyConverterPipe,
     FilterArrayPipe,
     ReverseStringPipe,
@@ -107,4 +109,5 @@ export class PipesDocumentationComponent {
     { id: 5, name: 'zack', age: 52 },
   ];
   currencyConverterData = 95;
+  phoneNumberFormatterData = '5555555555';
 }

@@ -1,5 +1,13 @@
 <app-container
   [title]="
+    'Pipe - Build a pipe that formats a raw string of numbers into a well-structured phone number format (e.g., (555) 555–5555).'
+  "
+>
+  <p>{{ phoneNumberFormatterData | phoneNumberFormatter }}</p>
+</app-container>
+
+<app-container
+  [title]="
     'Pipe - Build a pipe that converts a value from one currency to another using a provided exchange rate'
   "
 >
