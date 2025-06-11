@@ -87,3 +87,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 74. Create an observable that emits the current time stamp with a stop/reset button.
 75. Create an observable that emits user input from this text field.
 76. Create an observable that emits user input from a text field after 300 ms.
+77. Create an observable that sums the values 1 to 20 (1+2+3+4+5...) and emits each intermediate result.

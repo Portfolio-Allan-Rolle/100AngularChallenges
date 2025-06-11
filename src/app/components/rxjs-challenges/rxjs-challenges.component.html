@@ -1,5 +1,13 @@
 <section>
   <h1>RxJs Challenges</h1>
+  <app-container
+    [title]="
+      'Create an observable that sums the values 1 to 20 (1+2+3+4+5...) and emits each intermediate result'
+    "
+  >
+    <p>Intermediate result: {{ intermediateSum$ | async }}</p>
+    <p>Result: {{ reducedSum$ | async }}</p>
+  </app-container>
 
   <app-container [title]="'Emits the characters A, B and C'">
     <div>{{ characters$ | async }}</div>

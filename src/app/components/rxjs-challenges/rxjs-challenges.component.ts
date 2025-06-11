@@ -26,6 +26,8 @@ import {
   timestamp,
   toArray,
   delay,
+  reduce,
+  mergeAll,
 } from 'rxjs';
 import { ContainerComponent } from '../container/container.component';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -133,4 +135,24 @@ export class RxjsChallengesComponent {
   textFromInput2 = toSignal(
     this.textFromInput2$.pipe(delay(1000), timestamp(), tap(console.log)),
   );
+
+  integersArray$ = interval(1).pipe(
+    take(20),
+    map((n) => n + 1),
+    toArray(),
+  );
+
+  intermediateSum$ = new BehaviorSubject<any>([]);
+  reducedSum$ = new BehaviorSubject(0);
+  reduce$ = this.integersArray$
+    .pipe(
+      mergeAll(),
+      reduce((acc, curr) => {
+        this.intermediateSum$.next([...this.intermediateSum$.value, acc]);
+        return acc + curr;
+      }, 0),
+    )
+    .subscribe({
+      next: (v) => this.reducedSum$.next(v),
+    });
 }
