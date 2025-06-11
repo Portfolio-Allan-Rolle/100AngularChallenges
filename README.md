@@ -5,10 +5,10 @@
 Sources:
 
 Dylan Israel Udemy course [here](https://www.udemy.com/course/100-angular-challenge/)  
-RxJs Challenges [Github Link](https://github.com/HBTGmbH/rxjs-challenges)  
-RxJs Challenges [Github Link](https://github.com/AngularWave/rxjs-challenge)  
-Pipes Challenges [Blog post](https://lucid.co/techblog/2017/11/08/5-usage-ideas-for-angular-pipes)
-Pipes Challenges [Blog post](https://blog.bitsrc.io/mastering-custom-pipes-in-angular-31-real-world-examples-2023-c7ce8ec7faae)
+RxJs Challenges 1 [Github Link](https://github.com/HBTGmbH/rxjs-challenges)  
+RxJs Challenges 2 [Github Link](https://github.com/AngularWave/rxjs-challenge)  
+Pipes Challenges 1 [Blog post](https://lucid.co/techblog/2017/11/08/5-usage-ideas-for-angular-pipes)  
+Pipes Challenges 2 [Blog post](https://blog.bitsrc.io/mastering-custom-pipes-in-angular-31-real-world-examples-2023-c7ce8ec7faae)
 
 Lien pour visualiser le projet dans la description à droite ➡️
 
