@@ -6,7 +6,9 @@ Sources:
 
 Dylan Israel Udemy course [here](https://www.udemy.com/course/100-angular-challenge/)  
 RxJs Challenges [Github Link](https://github.com/HBTGmbH/rxjs-challenges)  
-RxJs Challenges [Github Link](https://github.com/AngularWave/rxjs-challenge)
+RxJs Challenges [Github Link](https://github.com/AngularWave/rxjs-challenge)  
+Pipes Challenges [Blog post](https://lucid.co/techblog/2017/11/08/5-usage-ideas-for-angular-pipes)
+Pipes Challenges [Blog post](https://blog.bitsrc.io/mastering-custom-pipes-in-angular-31-real-world-examples-2023-c7ce8ec7faae)
 
 Lien pour visualiser le projet dans la description à droite ➡️
 
@@ -91,3 +93,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 77. Create an observable that sums the values 1 to 20 (1+2+3+4+5...) and emits each intermediate result.
 78. Create an observable that emits the values from 1 to 5 exactly 5 times with a delay of 1000ms after each emission of the value 5.
 79. Mock 3rd Party(http)
+80. 

@@ -1,23 +1,37 @@
-<app-container [title]="'Services'">
+<app-container
+  [title]="
+    'Services - Create a service that redirects to page with a random id as parameter'
+  "
+>
   <div>{{ userExample() | json }}</div>
   <button (click)="switchPage()">Go to page services with id parameter</button>
 </app-container>
 
-<app-container [title]="'Services'">
+<app-container
+  [title]="
+    'Services - Create a local storage service that manages the state of your application.'
+  "
+>
   <div>{{ data$ | async | json }}</div>
   <button (click)="updateLocalStorageState()">
     Update local storage state
   </button>
 </app-container>
 
-<app-container [title]="'Services'">
+<app-container
+  [title]="
+    'Services - Build a singleton service that calls the snackbar from any page.'
+  "
+>
   <button (click)="showSnackBar('Hello from page services')">
     Call Snack Bar !
   </button>
   <app-snack-bar></app-snack-bar>
 </app-container>
 
-<app-container [title]="'Services'">
+<app-container
+  [title]="'Services - Create a service that fetches a user from selected id'"
+>
   @if (users()) {
     <div>
       <label for="users">Change User Id:</label>

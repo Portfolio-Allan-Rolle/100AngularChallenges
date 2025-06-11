@@ -7,7 +7,7 @@ import {
   signal,
 } from '@angular/core';
 import { UsersService } from '../../services/users.service';
-import { filter, map, mergeMap, startWith, Subscription } from 'rxjs';
+import { filter, map, mergeMap, Subscription } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { IUser } from '../../models';
 import { SnackBarService } from '../../services/snack-bar.service';
