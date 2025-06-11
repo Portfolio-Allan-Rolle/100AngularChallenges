@@ -2,15 +2,27 @@
   <app-container [title]="'Component'">
     <app-rxjs-challenges></app-rxjs-challenges>
   </app-container>
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a password component with a progress bar for how the password is validating'
+    "
+  >
     <app-password></app-password>
   </app-container>
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a pill filters component that takes in an array of labels. When clicked notifies parent'
+    "
+  >
     <app-pill-filters
       [labels]="['FL', 'CA', 'TN', 'OR', 'WA']"
     ></app-pill-filters>
   </app-container>
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a pill component that takes in a label, an optional icon and a style type'
+    "
+  >
     <div>
       <app-pill
         [label]="'Primary'"
@@ -42,7 +54,11 @@
     </div>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a fieldset toggle that can be collapsed and passes in content'
+    "
+  >
     <form>
       <app-fieldset-toggle [fieldsetLegend]="'Identification'">
         <label for="fname">First name:</label><br />
@@ -66,7 +82,7 @@
     </form>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container [title]="'Component - Build a modal component'">
     <div>
       <button (click)="bottomSheetService.setModal()">Display Modal</button>
     </div>
@@ -78,11 +94,15 @@
     </app-bottom-sheet>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a social media bar that floats on the ride hand side'
+    "
+  >
     <app-social-media-bar></app-social-media-bar>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container [title]="'Component - Build a skeleton loader'">
     @defer {
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat,
@@ -99,25 +119,45 @@
     }
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Create a banner with text centered and merge the background with the text'
+    "
+  >
     <app-banner-cut-out [title]="'100 Angular Challenges'"></app-banner-cut-out>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Create 2 select dropdowns. When selecting a continent, show countries only from selected continent'
+    "
+  >
     <app-continent-dropdrown></app-continent-dropdrown>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a countdown timer component that outputs the days, hours, minutes and seconds'
+    "
+  >
     <app-countdown-timer [time]="'Aug 30, 2025 09:45:00'"></app-countdown-timer>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a simple pop-up component that is shown on click above the element'
+    "
+  >
     <app-pop-up [message]="'Hello World !'">
       <span>Click me to display pop-up message</span>
     </app-pop-up>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a snackbar component that takes a message and add a fade in/out animation from the bottom'
+    "
+  >
     <div>
       <button (click)="showSnackBar('Hello from page component')">
         Show Snack Bar
@@ -126,68 +166,118 @@
     <app-snack-bar></app-snack-bar>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a button group / toggle component and display selected option on click'
+    "
+  >
     <app-button-toggle [data]="buttonGroupData"></app-button-toggle>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a ribbon component that has an error, info, success and warning type with four different location'
+    "
+  >
     <app-ribbon
       [ribbonPosition]="enumRibbonPosition.TOP_RIGHT"
       [ribbonType]="enumRibbonType.WARNING"
     ></app-ribbon>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="'Component - Build a simple reactive form with validation'"
+  >
     <app-email-form></app-email-form>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a sort table that sorts on a boolean, number, string and date'
+    "
+  >
     <app-sort-table [data]="dataForSortTable"></app-sort-table>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a tab component thats takes in an array of tabs and displays the content selected'
+    "
+  >
     <app-tabs [data]="dataForTabs"></app-tabs>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a simple table that takes an objet and outputs the values'
+    "
+  >
     <app-simple-table [data]="dataForSimpleTable"></app-simple-table>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a counter component that takes a min & max value. Default min to 0 and max to the safe max number'
+    "
+  >
     <app-counter-input
       [min]="minCounterInput"
       [max]="maxCounterInput"
     ></app-counter-input>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a search list component that displays a list of possible strings that matches a given string'
+    "
+  >
     <app-search-list [dataSearch]="dataSearch"></app-search-list>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a debounce search input that notifies the parent of its value updating every 250ms'
+    "
+  >
     <app-debounce-search
       (onDebounceSearch)="onSearch($event)"
     ></app-debounce-search>
     <p>Your searched for: {{ debounceSearch() }}</p>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a basic card component that takes in an icon, title & subtitle'
+    "
+  >
     <app-card [name]="'Allan'" [job]="'Front-End Developer'">
       <p>CDI</p>
     </app-card>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a basic card component that takes in an icon, title & subtitle'
+    "
+  >
     <app-card [name]="'Chris'" [job]="'Back-End Developer'">
       <p>Freelance</p>
     </app-card>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build an accordion component that takes in a list of accordion content (title & content)'
+    "
+  >
     <app-accordion [items]="accordionItems"></app-accordion>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a progress bar component that takes in a value and defaults to a max of 100'
+    "
+  >
     <app-progressbar
       [value]="progressBarValue()"
       [withUpdateButton]="true"
@@ -195,41 +285,69 @@
     ></app-progressbar>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a stars rating component that takes up to 5 stars and includes half and empty stars'
+    "
+  >
     <app-star-rating [reviewNumber]="3.5"></app-star-rating>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a top of page component that is displays when pass the 400px and brings to top of the page.'
+    "
+  >
     <app-top-of-page [distanceFromTopOfPage]="50"></app-top-of-page>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a card that takes in a credit card number as a string and return it dashed'
+    "
+  >
     <app-credit-card-input
       [isReadOnly]="false"
-      [cardNumber]="'3234'"
+      [cardNumber]="'6234543215678987'"
     ></app-credit-card-input>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a credit card input component that crosses out everything but last 4 digits and displays an icon'
+    "
+  >
     <app-credit-card-input
       [isReadOnly]="true"
       [cardNumber]="'6234543215678987'"
     ></app-credit-card-input>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a Twitter post component that appends the title of the page, takes in hash tags and a base href'
+    "
+  >
     <app-twitter-post [hashTags]="['one', 'two', 'three']"></app-twitter-post>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a LinkedIn post component that appends the current page on a hard coded url'
+    "
+  >
     <app-linkedin-post></app-linkedin-post>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container [title]="'Component - Build a modal component'">
     <app-modal [modalTitle]="'Modal title goes here'"></app-modal>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a quote component that takes in a quote, author and occupation'
+    "
+  >
     <app-quote
       [quote]="quote"
       [author]="quoteAuthor"
@@ -237,13 +355,21 @@
     ></app-quote>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a toggle component that takes in a value and has a smooth transition when changing'
+    "
+  >
     <app-toggle>
       <p>I am visible only when the toggle is on !</p>
     </app-toggle>
   </app-container>
 
-  <app-container [title]="'Component'">
+  <app-container
+    [title]="
+      'Component - Build a rich text viewer component that strips outs the html when it is invalid'
+    "
+  >
     <h5>Good Exemple</h5>
     <app-rich-text-viewer
       [html]="'<p>I am valid html</p>'"
