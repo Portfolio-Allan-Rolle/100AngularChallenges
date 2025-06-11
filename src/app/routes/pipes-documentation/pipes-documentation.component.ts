@@ -10,10 +10,12 @@ import { SortByKeyPipe } from '../../pipes/sort-by-key.pipe';
 import { RichTextPipe } from '../../pipes/rich-text.pipe';
 import { UpperCasePipe } from '@angular/common';
 import { UppercaseFirstPipe } from '../../pipes/uppercase-first.pipe';
+import { ReverseStringPipe } from '../../pipes/reverse-string.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    ReverseStringPipe,
     UppercaseFirstPipe,
     RichTextPipe,
     SortByKeyPipe,
@@ -92,4 +94,5 @@ export class PipesDocumentationComponent {
   ];
 
   uppercaseFirstdata = 'hello world';
+  reverseStringData = 'Angular';
 }
