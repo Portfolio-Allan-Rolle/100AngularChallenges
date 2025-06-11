@@ -95,3 +95,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 79. Mock 3rd Party(http)
 80. Build a pipe that capitalizes the first letter of a string while keeping the rest in lowercase.
 81. Build a pipe that reverses the characters of a string.
+82. Build a pipe that filters an array of objects based on a given property and filter value.

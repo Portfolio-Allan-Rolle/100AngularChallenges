@@ -8,13 +8,15 @@ import { sortType } from '../../models';
 import { ContainerComponent } from '../../components/container/container.component';
 import { SortByKeyPipe } from '../../pipes/sort-by-key.pipe';
 import { RichTextPipe } from '../../pipes/rich-text.pipe';
-import { UpperCasePipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { UppercaseFirstPipe } from '../../pipes/uppercase-first.pipe';
 import { ReverseStringPipe } from '../../pipes/reverse-string.pipe';
+import { FilterArrayPipe } from '../../pipes/filter-array.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    FilterArrayPipe,
     ReverseStringPipe,
     UppercaseFirstPipe,
     RichTextPipe,
@@ -25,6 +27,7 @@ import { ReverseStringPipe } from '../../pipes/reverse-string.pipe';
     FilterTermPipe,
     SortPipe,
     ContainerComponent,
+    CommonModule,
   ],
   templateUrl: './pipes-documentation.component.html',
   styleUrl: './pipes-documentation.component.scss',
@@ -95,4 +98,10 @@ export class PipesDocumentationComponent {
 
   uppercaseFirstdata = 'hello world';
   reverseStringData = 'Angular';
+  filterArrayData = [
+    { id: 1, name: 'allan', age: 35 },
+    { id: 3, name: 'nick', age: 29 },
+    { id: 4, name: 'joe', age: 18 },
+    { id: 5, name: 'zack', age: 52 },
+  ];
 }
