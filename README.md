@@ -93,4 +93,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 77. Create an observable that sums the values 1 to 20 (1+2+3+4+5...) and emits each intermediate result.
 78. Create an observable that emits the values from 1 to 5 exactly 5 times with a delay of 1000ms after each emission of the value 5.
 79. Mock 3rd Party(http)
-80. 
+80. Build a pipe that capitalizes the first letter of a string while keeping the rest in lowercase.

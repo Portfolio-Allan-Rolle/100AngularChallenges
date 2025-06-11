@@ -8,10 +8,13 @@ import { sortType } from '../../models';
 import { ContainerComponent } from '../../components/container/container.component';
 import { SortByKeyPipe } from '../../pipes/sort-by-key.pipe';
 import { RichTextPipe } from '../../pipes/rich-text.pipe';
+import { UpperCasePipe } from '@angular/common';
+import { UppercaseFirstPipe } from '../../pipes/uppercase-first.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    UppercaseFirstPipe,
     RichTextPipe,
     SortByKeyPipe,
     TruncatePipe,
@@ -87,4 +90,6 @@ export class PipesDocumentationComponent {
     { content: 'University' },
     { content: 'Internet' },
   ];
+
+  uppercaseFirstdata = 'hello world';
 }
