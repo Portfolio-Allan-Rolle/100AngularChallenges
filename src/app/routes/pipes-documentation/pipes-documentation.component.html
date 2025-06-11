@@ -1,5 +1,13 @@
 <app-container
   [title]="
+    'Pipe - Build a pipe that converts a value from one currency to another using a provided exchange rate'
+  "
+>
+  <p>{{ currencyConverterData | currencyConverter: 1.15 : "$" }}</p>
+</app-container>
+
+<app-container
+  [title]="
     'Pipe - Build a pipe that filters an array of objects based on a given property and filter value.'
   "
 >

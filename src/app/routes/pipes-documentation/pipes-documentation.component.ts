@@ -12,10 +12,12 @@ import { CommonModule } from '@angular/common';
 import { UppercaseFirstPipe } from '../../pipes/uppercase-first.pipe';
 import { ReverseStringPipe } from '../../pipes/reverse-string.pipe';
 import { FilterArrayPipe } from '../../pipes/filter-array.pipe';
+import { CurrencyConverterPipe } from '../../pipes/currency-converter.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    CurrencyConverterPipe,
     FilterArrayPipe,
     ReverseStringPipe,
     UppercaseFirstPipe,
@@ -104,4 +106,5 @@ export class PipesDocumentationComponent {
     { id: 4, name: 'joe', age: 18 },
     { id: 5, name: 'zack', age: 52 },
   ];
+  currencyConverterData = 95;
 }

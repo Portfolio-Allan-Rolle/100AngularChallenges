@@ -5,7 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ReverseStringPipe implements PipeTransform {
   transform(value: string): string {
-    if (!value) return value;
+    if (!value) {
+      throw new Error('A value must be provided !');
+    }
     return [...value].reverse().join('').toString();
   }
 }
