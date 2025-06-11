@@ -1,8 +1,16 @@
-<app-container [title]="'Pipe'">
+<app-container
+  [title]="
+    'Pipe - Create a pipe that filters html tags and displays text content'
+  "
+>
   <div>{{ richTextPipeSample | richText }}</div>
 </app-container>
 
-<app-container [title]="'Pipe'">
+<app-container
+  [title]="
+    'Pipe - Create a pipe that sorts an array of objects. Pass in the key and direction to sort by.'
+  "
+>
   <p>Sorted Descending</p>
   <br />
   <ul>
@@ -26,15 +34,25 @@
   </ul>
 </app-container>
 
-<app-container [title]="'Pipe'">
+<app-container
+  [title]="
+    'Pipe - Create a pipe that accepts an array of strings and a sort direction value of either asc or desc.'
+  "
+>
   <p>{{ dataToSort | sort: sortEnum.DESC }}</p>
 </app-container>
 
-<app-container [title]="'Pipe'">
+<app-container
+  [title]="
+    'Pipe - Build a pipe that truncates text that is longer than 100 characters by default and appends \'...\''
+  "
+>
   <p>{{ dataTruncatePipe | truncate }}</p>
 </app-container>
 
-<app-container [title]="'Pipe'">
+<app-container
+  [title]="'Pipe - Build a pipe that formats credit card number when valid'"
+>
   <p>{{ creditCardNumber() | creditCardFormatter }}</p>
   <br />
   <button (click)="changeToValid()">Valid Credit Card Number</button>
@@ -46,11 +64,19 @@
   </button>
 </app-container>
 
-<app-container [title]="'Pipe'">
+<app-container
+  [title]="
+    'Pipe - Build a flatten pipe that takes in an array of any values and flatten out to a single array. Make it impure.'
+  "
+>
   <p>{{ dataToFlatten() | flatten }}</p>
 </app-container>
 
-<app-container [title]="'Pipe'">
+<app-container
+  [title]="
+    'Pipe - Build a pipe that takes in an array of strings and filters it by a string'
+  "
+>
   <h5>Original data:</h5>
   <p>{{ dataToFilter }}</p>
   <br />
