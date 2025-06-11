@@ -91,11 +91,11 @@ Lien pour visualiser le projet dans la description à droite ➡️
 75. Create an observable that emits user input from this text field.
 76. Create an observable that emits user input from a text field after 300 ms.
 77. Create an observable that sums the values 1 to 20 (1+2+3+4+5...) and emits each intermediate result.
-78. Create an observable that emits the values from 1 to 5 exactly 5 times with a delay of 1000ms after each emission of the value 5.
+78. Create an observable that emits the values from 1 to 5 exactly 5 times with a delay of 1000ms.
 79. Mock 3rd Party(http)
 80. Build a pipe that capitalizes the first letter of a string while keeping the rest in lowercase.
 81. Build a pipe that reverses the characters of a string.
 82. Build a pipe that filters an array of objects based on a given property and filter value.
 83. Build a pipe that converts a value from one currency to another using a provided exchange rate.
-84. Build a pipe that formats a raw string of numbers into a well-structured phone number format (e.g., (555) 555–5555).
+84. Build a pipe that formats a raw string of numbers into a well-structured phone number format.
 85. Build a pipe that converts a file size in bytes to a more human-readable format, such as KB, MB, or GB.
