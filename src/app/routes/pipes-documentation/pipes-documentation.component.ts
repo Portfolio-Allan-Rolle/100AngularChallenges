@@ -14,10 +14,12 @@ import { ReverseStringPipe } from '../../pipes/reverse-string.pipe';
 import { FilterArrayPipe } from '../../pipes/filter-array.pipe';
 import { CurrencyConverterPipe } from '../../pipes/currency-converter.pipe';
 import { PhoneNumberFormatterPipe } from '../../pipes/phone-number-formatter.pipe';
+import { FileSizeConverterPipe } from '../../pipes/file-size-converter.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    FileSizeConverterPipe,
     PhoneNumberFormatterPipe,
     CurrencyConverterPipe,
     FilterArrayPipe,
@@ -110,4 +112,5 @@ export class PipesDocumentationComponent {
   ];
   currencyConverterData = 95;
   phoneNumberFormatterData = '5555555555';
+  fileSizeConverterData = 1024;
 }

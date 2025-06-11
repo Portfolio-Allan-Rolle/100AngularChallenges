@@ -1,6 +1,14 @@
 <app-container
   [title]="
-    'Pipe - Build a pipe that formats a raw string of numbers into a well-structured phone number format (e.g., (555) 555–5555).'
+    'Pipe - Build a pipe that converts a file size in bytes to a more human-readable format, such as KB, MB, or GB'
+  "
+>
+  <p>{{ fileSizeConverterData | fileSizeConverter }}</p>
+</app-container>
+
+<app-container
+  [title]="
+    'Pipe - Build a pipe that formats a raw string of numbers into a well-structured phone number format (e.g., (555) 555–5555)'
   "
 >
   <p>{{ phoneNumberFormatterData | phoneNumberFormatter }}</p>
@@ -16,7 +24,7 @@
 
 <app-container
   [title]="
-    'Pipe - Build a pipe that filters an array of objects based on a given property and filter value.'
+    'Pipe - Build a pipe that filters an array of objects based on a given property and filter value'
   "
 >
   <p>Original Data: {{ filterArrayData | json }}</p>
@@ -51,7 +59,7 @@
 
 <app-container
   [title]="
-    'Pipe - Create a pipe that sorts an array of objects. Pass in the key and direction to sort by.'
+    'Pipe - Create a pipe that sorts an array of objects. Pass in the key and direction to sort by'
   "
 >
   <p>Sorted Descending</p>
@@ -79,7 +87,7 @@
 
 <app-container
   [title]="
-    'Pipe - Create a pipe that accepts an array of strings and a sort direction value of either asc or desc.'
+    'Pipe - Create a pipe that accepts an array of strings and a sort direction value of either asc or desc'
   "
 >
   <p>{{ dataToSort | sort: sortEnum.DESC }}</p>
@@ -109,7 +117,7 @@
 
 <app-container
   [title]="
-    'Pipe - Build a flatten pipe that takes in an array of any values and flatten out to a single array. Make it impure.'
+    'Pipe - Build a flatten pipe that takes in an array of any values and flatten out to a single array. Make it impure'
   "
 >
   <p>{{ dataToFlatten() | flatten }}</p>
