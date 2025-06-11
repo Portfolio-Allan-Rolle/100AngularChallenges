@@ -7,10 +7,20 @@
   <nav class="nav">
     <ul class="nav_list">
       <li class="nav_item">
-        <a class="nav_link" routerLink="">Components</a>
+        <a
+          class="nav_link"
+          routerLink=""
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Components</a
+        >
       </li>
       <li class="nav_item">
-        <a class="nav_link" routerLink="/directives" routerLinkActive="active"
+        <a
+          class="nav_link"
+          routerLink="/directives"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
           >Directives</a
         >
       </li>
@@ -20,7 +30,11 @@
         >
       </li>
       <li class="nav_item">
-        <a class="nav_link" routerLink="/pipes" routerLinkActive="active"
+        <a
+          class="nav_link"
+          routerLink="/pipes"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
           >Pipes</a
         >
       </li>
@@ -29,6 +43,7 @@
           class="nav_link"
           routerLink="/miscellaneous"
           routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
           >Miscellaneous</a
         >
       </li>

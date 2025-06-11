@@ -1,15 +1,19 @@
-<app-container [title]="'Miscellaneous'">
+<app-container [title]="'Miscellaneous - Redirect to an non-existing page'">
   <a routerLink="/rxjs">Go to a non-existing page</a>
 </app-container>
 
-<app-container [title]="'Miscellaneous'">
+<app-container
+  [title]="'Miscellaneous - Active a guard when leaving form unsubmitted'"
+>
   <form class="form" [formGroup]="form">
     <input formControlName="name" class="form_input" type="text" />
     <button (click)="onSubmit()" type="submit">Submit</button>
   </form>
 </app-container>
 
-<app-container [title]="'Miscellaneous'">
+<app-container
+  [title]="'Miscellaneous - toggle element visibility with an animation'"
+>
   <div>
     <button (click)="onToggle()">
       Toggle element using a fade in/out animation
