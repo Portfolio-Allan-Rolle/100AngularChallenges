@@ -155,4 +155,10 @@ export class RxjsChallengesComponent {
     .subscribe({
       next: (v) => this.reducedSum$.next(v),
     });
+
+  intervalOnRepeat$ = interval(1000).pipe(
+    map((n) => n + 1),
+    take(5),
+    repeat({ count: 5, delay: 1000 }),
+  );
 }

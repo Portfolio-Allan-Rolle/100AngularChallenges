@@ -2,6 +2,13 @@
   <h1>RxJs Challenges</h1>
   <app-container
     [title]="
+      'Create an observable that emits the values from 1 to 5 exactly 5 times with a delay of 1000ms after each emission of the value 5 '
+    "
+  >
+    <p>{{ intervalOnRepeat$ | async }}</p>
+  </app-container>
+  <app-container
+    [title]="
       'Create an observable that sums the values 1 to 20 (1+2+3+4+5...) and emits each intermediate result'
     "
   >
