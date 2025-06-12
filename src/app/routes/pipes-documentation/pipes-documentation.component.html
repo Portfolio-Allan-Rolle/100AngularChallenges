@@ -1,5 +1,18 @@
 <app-container
   [title]="
+    'Pipe - Build a pipe that shuffles the elements of an array, creating a random order for display'
+  "
+>
+  Original data:
+  <pre>['Hello', 5, false, 'World', 600, true]</pre>
+  <br />
+  <ul>
+    <li *ngFor="let item of itemsArraySuffleData | arrayShuffle">{{ item }}</li>
+  </ul>
+</app-container>
+
+<app-container
+  [title]="
     'Pipe - Build a pipe that displays timestamps in a relative format, like “just now,” “a few minutes ago,” or “yesterday'
   "
 >

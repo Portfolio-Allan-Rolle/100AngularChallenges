@@ -26,10 +26,12 @@ import { PasswordStrengthPipe } from '../../pipes/password-strength.pipe';
 import { OrdinalNumberPipe } from '../../pipes/ordinal-number.pipe';
 import { URLifyPipe } from '../../pipes/url-ify.pipe';
 import { RelativeTimePipe } from '../../pipes/relative-time.pipe';
+import { ArrayShufflePipe } from '../../pipes/array-suffle.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    ArrayShufflePipe,
     RelativeTimePipe,
     URLifyPipe,
     OrdinalNumberPipe,
@@ -135,4 +137,5 @@ export class PipesDocumentationComponent {
   currencyConverterData = 95;
   phoneNumberFormatterData = '5555555555';
   fileSizeConverterData = 1024;
+  itemsArraySuffleData = ['Hello', 5, false, 'World', 600, true];
 }

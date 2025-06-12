@@ -110,3 +110,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 94. Build a pipe that converts a number into its corresponding ordinal representation (e.g., 1st, 2nd, 3rd, 4th, etc.).
 95. Build a pipe that converts a string into a URL-friendly format, replacing spaces with hyphens and removing special characters.
 96. Build a pipe that displays timestamps in a relative format, like “just now,” “a few minutes ago,” or “yesterday.”
+97. Build a pipe that shuffles the elements of an array, creating a random order for display.
