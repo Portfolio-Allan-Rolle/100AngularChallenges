@@ -106,3 +106,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 90. Build a pipe that converts a string to title case, where the first letter of each word is capitalized.
 91. Build a pipe that handles pluralization of words based on the count provided. It can change “item” to “items”.
 92. Build a pipe that takes a JSON object and pretty-prints it, making it more readable for debugging purposes.
+93. Build a pipe that checks the strength of a password and provides feedback on its complexity, such as “Weak,” “Medium,” or “Strong.”

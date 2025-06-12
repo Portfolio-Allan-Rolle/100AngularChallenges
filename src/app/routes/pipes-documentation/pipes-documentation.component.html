@@ -1,5 +1,17 @@
 <app-container
   [title]="
+    'Pipe - Build a pipe that checks the strength of a password and provides feedback on its complexity, such as “Weak,” “Medium,” or “Strong.”'
+  "
+>
+  <p>"pass123" => {{ "Pass123" | passwordStrength }}</p>
+  <!-- Output: "Medium" -->
+
+  <p>"StrongPassword123" => {{ "StrongPassword123" | passwordStrength }}</p>
+  <!-- Output: "Strong" -->
+</app-container>
+
+<app-container
+  [title]="
     'Pipe - Takes a JSON object and pretty-prints it, making it more readable for debugging purposes'
   "
 >
