@@ -1,5 +1,13 @@
 <app-container
   [title]="
+    'Pipe - Build a pipe that displays a human-friendly representation of a timestamp, indicating how long ago an event occurred '
+  "
+>
+  <p>{{ 1330210800000 | timeAgo }}</p>
+</app-container>
+
+<app-container
+  [title]="
     'Pipe - Build a pipe that converts a file size in bytes to a more human-readable format, such as KB, MB, or GB'
   "
 >
