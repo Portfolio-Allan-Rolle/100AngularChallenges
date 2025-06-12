@@ -113,3 +113,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 97. Build a pipe that shuffles the elements of an array, creating a random order for display.
 98. Build a pipe that converts a string into a URL slug by removing special characters, converting spaces to hyphens, and making it lowercase.
 99. Build a pipe that converts Arabic numerals to Roman numerals and vice versa. 
+100. Build a pipe that parses a CSV (Comma-Separated Values) string into an array for easier data manipulation.

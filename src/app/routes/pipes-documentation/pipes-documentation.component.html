@@ -1,5 +1,15 @@
 <app-container
   [title]="
+    'Pipe - Build a pipe that parses a CSV (Comma-Separated Values) string into an array for easier data manipulation'
+  "
+>
+  <ul>
+    <li *ngFor="let item of 'apple,banana,cherry' | csvToArray">{{ item }}</li>
+  </ul>
+</app-container>
+
+<app-container
+  [title]="
     'Pipe - Build a pipe that converts Arabic numerals to Roman numerals and vice versa'
   "
 >

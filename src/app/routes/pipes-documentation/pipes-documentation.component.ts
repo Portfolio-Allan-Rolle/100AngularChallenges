@@ -29,12 +29,14 @@ import { RelativeTimePipe } from '../../pipes/relative-time.pipe';
 import { ArrayShufflePipe } from '../../pipes/array-suffle.pipe';
 import { SlugifyPipe } from '../../pipes/slugify.pipe';
 import { RomanNumeralPipe } from '../../pipes/roman-numeral.pipe';
+import { CSVToArrayPipe } from '../../pipes/csv-to-array.pipe';
 
 
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    CSVToArrayPipe,
     RomanNumeralPipe,
     SlugifyPipe,
     ArrayShufflePipe,
