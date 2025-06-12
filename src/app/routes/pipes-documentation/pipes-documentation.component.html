@@ -1,9 +1,16 @@
 <app-container
   [title]="
+    'Pipe - Takes a JSON object and pretty-prints it, making it more readable for debugging purposes'
+  "
+>
+  <pre>{{ '{"name": "Allan"}' | jsonPrettyPrint }}</pre>
+</app-container>
+
+<app-container
+  [title]="
     'Pipe - Build a pipe that handles pluralization of words based on the count provided. It can change “item” to “items” when the count is greater than one'
   "
 >
-
   <p>Count is 1 : {{ "item" | pluralize: 1 }}</p>
   <!-- Output: "item" -->
 

@@ -21,10 +21,12 @@ import { InitialsPipe } from '../../pipes/initials.pipe';
 import { CamelCaseToSpacesPipe } from '../../pipes/camel-case-to-spaces.pipe';
 import { TitleCasePipe } from '../../pipes/title-case.pipe';
 import { PluralizePipe } from '../../pipes/pluralize.pipe';
+import { JsonPrettyPrintPipe } from '../../pipes/json-pretty-print.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    JsonPrettyPrintPipe,
     PluralizePipe,
     TitleCasePipe,
     CamelCaseToSpacesPipe,
