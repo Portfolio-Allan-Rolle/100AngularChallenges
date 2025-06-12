@@ -19,10 +19,12 @@ import { TimeAgoPipe } from '../../pipes/time-ago.pipe';
 import { PercentChangePipe } from '../../pipes/percent-change.pipe';
 import { InitialsPipe } from '../../pipes/initials.pipe';
 import { CamelCaseToSpacesPipe } from '../../pipes/camel-case-to-spaces.pipe';
+import { TitleCasePipe } from '../../pipes/title-case.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    TitleCasePipe,
     CamelCaseToSpacesPipe,
     InitialsPipe,
     PercentChangePipe,

@@ -103,3 +103,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 87. Build a pipe that calculates the percentage change between two values and formats it with a + / - sign.
 88. Build a pipe that extracts and displays the initials from a full name, useful for user profile displays.
 89. Build a pipe that converts camelCase or PascalCase strings into human-readable sentences with spaces.
+90. Build a pipe that converts a string to title case, where the first letter of each word is capitalized.

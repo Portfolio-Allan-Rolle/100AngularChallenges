@@ -1,5 +1,13 @@
 <app-container
   [title]="
+    'Pipe - Build a pipe that converts a string to title case, where the first letter of each word is capitalized, and the rest are in lowercase'
+  "
+>
+  <p>{{ 'angular is fun to learn.' | titleCase }}</p>
+</app-container>
+
+<app-container
+  [title]="
     'Pipe - Build a pipe that converts camelCase or PascalCase strings into human-readable sentences with spaces'
   "
 >
