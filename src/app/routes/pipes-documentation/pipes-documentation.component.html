@@ -1,6 +1,14 @@
 <app-container
   [title]="
-    'Pipe - Build a pipe that calculates the percentage change between two values and formats it with a plus or minus sign.'
+    'Pipe - Extracts and displays the initials from a full name, useful for user profile displays'
+  "
+>
+  <p>{{ "Allan Rolle" | initials }}</p></app-container
+>
+
+<app-container
+  [title]="
+    'Pipe - Build a pipe that calculates the percentage change between two values and formats it with a plus or minus sign'
   "
 >
   <p>{{ 85 | percentChange: 100 }}</p>
