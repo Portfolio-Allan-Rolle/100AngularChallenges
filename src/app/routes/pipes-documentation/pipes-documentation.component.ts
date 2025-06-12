@@ -27,10 +27,12 @@ import { OrdinalNumberPipe } from '../../pipes/ordinal-number.pipe';
 import { URLifyPipe } from '../../pipes/url-ify.pipe';
 import { RelativeTimePipe } from '../../pipes/relative-time.pipe';
 import { ArrayShufflePipe } from '../../pipes/array-suffle.pipe';
+import { SlugifyPipe } from '../../pipes/slugify.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    SlugifyPipe,
     ArrayShufflePipe,
     RelativeTimePipe,
     URLifyPipe,

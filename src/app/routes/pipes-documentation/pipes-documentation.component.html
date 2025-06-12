@@ -1,5 +1,13 @@
 <app-container
   [title]="
+    'Pipe - Build a pipe that converts a string into a URL slug by removing special characters, converting spaces to hyphens, and making it lowercase'
+  "
+>
+  <p>{{ "This is a Slug Example!" | slugify }}</p>
+</app-container>
+
+<app-container
+  [title]="
     'Pipe - Build a pipe that shuffles the elements of an array, creating a random order for display'
   "
 >
