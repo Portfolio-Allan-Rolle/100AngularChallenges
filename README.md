@@ -106,11 +106,11 @@ Lien pour visualiser le projet dans la description à droite ➡️
 90. Build a pipe that converts a string to title case, where the first letter of each word is capitalized.
 91. Build a pipe that handles pluralization of words based on the count provided. It can change “item” to “items”.
 92. Build a pipe that takes a JSON object and pretty-prints it, making it more readable for debugging purposes.
-93. Build a pipe that checks the strength of a password and provides feedback on its complexity, such as “Weak,” “Medium,” or “Strong.”
+93. Build a pipe that checks the strength of a password and provides feedback on its complexity.
 94. Build a pipe that converts a number into its corresponding ordinal representation (e.g., 1st, 2nd, 3rd, 4th, etc.).
-95. Build a pipe that converts a string into a URL-friendly format, replacing spaces with hyphens and removing special characters.
+95. Build a pipe that converts a string into a URL-friendly format.
 96. Build a pipe that displays timestamps in a relative format, like “just now,” “a few minutes ago,” or “yesterday.”
 97. Build a pipe that shuffles the elements of an array, creating a random order for display.
-98. Build a pipe that converts a string into a URL slug by removing special characters, converting spaces to hyphens, and making it lowercase.
-99. Build a pipe that converts Arabic numerals to Roman numerals and vice versa. 
+98. Build a pipe that converts a string into a URL slug by removing special characters.
+99. Build a pipe that converts Arabic numerals to Roman numerals and vice versa.
 100. Build a pipe that parses a CSV (Comma-Separated Values) string into an array for easier data manipulation.
