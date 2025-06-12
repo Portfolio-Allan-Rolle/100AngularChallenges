@@ -23,10 +23,12 @@ import { TitleCasePipe } from '../../pipes/title-case.pipe';
 import { PluralizePipe } from '../../pipes/pluralize.pipe';
 import { JsonPrettyPrintPipe } from '../../pipes/json-pretty-print.pipe';
 import { PasswordStrengthPipe } from '../../pipes/password-strength.pipe';
+import { OrdinalNumberPipe } from '../../pipes/ordinal-number.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    OrdinalNumberPipe,
     PasswordStrengthPipe,
     JsonPrettyPrintPipe,
     PluralizePipe,

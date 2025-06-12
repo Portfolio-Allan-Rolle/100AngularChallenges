@@ -1,6 +1,24 @@
 <app-container
   [title]="
-    'Pipe - Build a pipe that checks the strength of a password and provides feedback on its complexity, such as “Weak,” “Medium,” or “Strong.”'
+    'Pipe - Build a pipe that converts a number into its corresponding ordinal representation (e.g., 1st, 2nd, 3rd, 4th, etc.)'
+  "
+>
+  <p>{{ 1 | ordinalNumber }}</p>
+  <!-- Output: "1st" -->
+
+  <p>{{ 22 | ordinalNumber }}</p>
+  <!-- Output: "22nd" -->
+
+  <p>{{ 13 | ordinalNumber }}</p>
+  <!-- Output: "13th" -->
+
+  <p>{{ 7 | ordinalNumber }}</p>
+  <!-- Output: "7th" -->
+</app-container>
+
+<app-container
+  [title]="
+    'Pipe - Build a pipe that checks the strength of a password and provides feedback on its complexity, such as “Weak,” “Medium,” or “Strong”'
   "
 >
   <p>"pass123" => {{ "Pass123" | passwordStrength }}</p>
