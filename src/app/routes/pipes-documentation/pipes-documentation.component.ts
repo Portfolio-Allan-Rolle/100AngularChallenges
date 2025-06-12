@@ -16,10 +16,12 @@ import { CurrencyConverterPipe } from '../../pipes/currency-converter.pipe';
 import { PhoneNumberFormatterPipe } from '../../pipes/phone-number-formatter.pipe';
 import { FileSizeConverterPipe } from '../../pipes/file-size-converter.pipe';
 import { TimeAgoPipe } from '../../pipes/time-ago.pipe';
+import { PercentChangePipe } from '../../pipes/percent-change.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    PercentChangePipe,
     TimeAgoPipe,
     FileSizeConverterPipe,
     PhoneNumberFormatterPipe,

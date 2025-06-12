@@ -100,3 +100,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 84. Build a pipe that formats a raw string of numbers into a well-structured phone number format.
 85. Build a pipe that converts a file size in bytes to a more human-readable format, such as KB, MB, or GB.
 86. Build a pipe that displays a human-friendly representation of a timestamp.
+87. Build a pipe that calculates the percentage change between two values and formats it with a plus or minus sign.

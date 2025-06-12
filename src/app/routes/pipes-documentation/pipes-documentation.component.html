@@ -1,5 +1,13 @@
 <app-container
   [title]="
+    'Pipe - Build a pipe that calculates the percentage change between two values and formats it with a plus or minus sign.'
+  "
+>
+  <p>{{ 85 | percentChange: 100 }}</p>
+</app-container>
+
+<app-container
+  [title]="
     'Pipe - Build a pipe that displays a human-friendly representation of a timestamp, indicating how long ago an event occurred '
   "
 >
