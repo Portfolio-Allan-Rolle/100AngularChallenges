@@ -26,7 +26,7 @@ Lien pour visualiser le projet dans la description à droite ➡️
 10. Build a circular loader component that can be turn off and on and has an overlay with a blur effect.
 11. Build a card that takes in a credit card number as a string and return it dashed.
 12. Build a credit card input component that crosses out everything but last 4 digits and displays an icon.
-13. Expand the loader to accept an input to change its type: circular or loading.
+13. Build a pipe that converts a value from one currency to another using a provided exchange rate.
 14. Build a Twitter post component that appends the title of the page, takes in hash tags and a base href.
 15. Build a LinkedIn post component that appends the current page on a hard coded url.
 16. Build a flatten pipe that takes in an array of any values and flatten out to a single array. Make it impure.
@@ -34,7 +34,7 @@ Lien pour visualiser le projet dans la description à droite ➡️
 18. Create a directive that debounces a click event for up to 500ms.
 19. Build a quote component that takes in a quote, author and occupation.
 20. Build a toggle component that takes in a value and has a smooth transition when changing.
-21. Build a pipe that takes in an array of strings and filters it by a string.
+21. Build a pipe that displays a human-friendly representation of a timestamp.
 22. Build a rich text viewer component that strips outs the html when it is invalid.
 23. Build a debounce search input that notifies the parent of its value updating every 250ms.
 24. Build a search list component that displays a list of possible strings that matches a given string.
@@ -42,7 +42,7 @@ Lien pour visualiser le projet dans la description à droite ➡️
 26. Build a simple table that takes an objet and outputs the values.
 27. Create a pipe that accepts an array of strings and a sort direction value of either asc or desc.
 28. Build a tab component thats takes in an array of tabs and displays the content selected.
-29. Build a ripple directive that on hover changes color and on click ripple hover the element.
+29. Build a pipe that takes in an array of strings and filters it by a string.
 30. Build a fade in & fade out animation that fades an element when entering and leaving the DOM.
 31. Build a sort table that sorts on a boolean, number, string and date.
 32. Build a reactive form guard to ask the user if they wanted to proceed with the move if the form is dirty.
@@ -59,10 +59,10 @@ Lien pour visualiser le projet dans la description à droite ➡️
 43. Create a lazy load image directive that loads an image only if it is in view.
 44. Build a footer component with the current year and social media available.
 45. Build an animation to slide right when an element enters.
-46. Build a skeleton loader
+46. Build a pipe that capitalizes the first letter of a string while keeping the rest in lowercase.
 47. Build a social media bar that floats on the ride hand side.
 48. Build a pop-up component that slides from the bottom.
-49. Build a fieldset toggle that can be collapsed and passes in content.
+49. Build a pipe that converts camelCase or PascalCase strings into human-readable sentences with spaces.
 50. Build a pill component that takes in a label, an optional icon and a style type.
 51. Build a pill filters component that takes in an array of labels. When clicked notifies parent.
 52. Build a 404 Not Found component that redirects to the home page after 10 seconds.
@@ -73,7 +73,7 @@ Lien pour visualiser le projet dans la description à droite ➡️
 57. Create an observable that emits every ASCII character in ascending order and then completes.
 58. Create a local storage service that manages the state of your application.
 59. Route params.
-60. Common scripts.
+60. Build a pipe that takes a JSON object and pretty-prints it, making it more readable for debugging purposes.
 61. Active Route UI.
 62. Create an observable that emits all even integers.
 63. Create an observable that emits all even integers until it reaches the number 100.
@@ -86,31 +86,32 @@ Lien pour visualiser le projet dans la description à droite ➡️
 70. Create an observable that requests a post using dummyjson.com and logs the result.
 71. Create an observable that requests 3 post from an API in parallel and emits once all 3 articles are loaded.
 72. Create an observable that emits a value each time a user click a button.
-73. Create an observable that emits the current time stamp until the user clicks this button.
+73. Build a pipe that parses a CSV (Comma-Separated Values) string into an array for easier data manipulation.
 74. Create an observable that emits the current time stamp with a stop/reset button.
-75. Create an observable that emits user input from this text field.
+75. Build a pipe that shuffles the elements of an array, creating a random order for display.
 76. Create an observable that emits user input from a text field after 300 ms.
 77. Create an observable that sums the values 1 to 20 (1+2+3+4+5...) and emits each intermediate result.
 78. Create an observable that emits the values from 1 to 5 exactly 5 times with a delay of 1000ms.
 79. Mock 3rd Party(http)
-80. Build a pipe that capitalizes the first letter of a string while keeping the rest in lowercase.
+80. Build a skeleton loader
 81. Build a pipe that reverses the characters of a string.
 82. Build a pipe that filters an array of objects based on a given property and filter value.
-83. Build a pipe that converts a value from one currency to another using a provided exchange rate.
+83. Expand the loader to accept an input to change its type: circular or loading.
 84. Build a pipe that formats a raw string of numbers into a well-structured phone number format.
 85. Build a pipe that converts a file size in bytes to a more human-readable format, such as KB, MB, or GB.
-86. Build a pipe that displays a human-friendly representation of a timestamp.
+86. Build a ripple directive that on hover changes color and on click ripple hover the element.
 87. Build a pipe that calculates the percentage change between two values and formats it with a + / - sign.
 88. Build a pipe that extracts and displays the initials from a full name, useful for user profile displays.
-89. Build a pipe that converts camelCase or PascalCase strings into human-readable sentences with spaces.
+89. Build a fieldset toggle that can be collapsed and passes in content.
 90. Build a pipe that converts a string to title case, where the first letter of each word is capitalized.
 91. Build a pipe that handles pluralization of words based on the count provided. It can change “item” to “items”.
-92. Build a pipe that takes a JSON object and pretty-prints it, making it more readable for debugging purposes.
+92. Common scripts.
 93. Build a pipe that checks the strength of a password and provides feedback on its complexity.
 94. Build a pipe that converts a number into its corresponding ordinal representation (e.g., 1st, 2nd, 3rd, 4th, etc.).
 95. Build a pipe that converts a string into a URL-friendly format.
 96. Build a pipe that displays timestamps in a relative format, like “just now,” “a few minutes ago,” or “yesterday.”
-97. Build a pipe that shuffles the elements of an array, creating a random order for display.
+97. Create an observable that emits user input from this text field.
 98. Build a pipe that converts a string into a URL slug by removing special characters.
 99. Build a pipe that converts Arabic numerals to Roman numerals and vice versa.
-100. Build a pipe that parses a CSV (Comma-Separated Values) string into an array for easier data manipulation.
+100. Create an observable that emits the current time stamp until the user clicks this button.
+
