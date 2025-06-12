@@ -28,10 +28,14 @@ import { URLifyPipe } from '../../pipes/url-ify.pipe';
 import { RelativeTimePipe } from '../../pipes/relative-time.pipe';
 import { ArrayShufflePipe } from '../../pipes/array-suffle.pipe';
 import { SlugifyPipe } from '../../pipes/slugify.pipe';
+import { RomanNumeralPipe } from '../../pipes/roman-numeral.pipe';
+
+
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    RomanNumeralPipe,
     SlugifyPipe,
     ArrayShufflePipe,
     RelativeTimePipe,

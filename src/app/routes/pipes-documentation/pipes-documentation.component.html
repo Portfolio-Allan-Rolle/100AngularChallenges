@@ -1,5 +1,13 @@
 <app-container
   [title]="
+    'Pipe - Build a pipe that converts Arabic numerals to Roman numerals and vice versa'
+  "
+>
+  <p>1984: {{ 1984 | romanNumeral }}</p>
+</app-container>
+
+<app-container
+  [title]="
     'Pipe - Build a pipe that converts a string into a URL slug by removing special characters, converting spaces to hyphens, and making it lowercase'
   "
 >
