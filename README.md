@@ -104,3 +104,4 @@ Lien pour visualiser le projet dans la description à droite ➡️
 88. Build a pipe that extracts and displays the initials from a full name, useful for user profile displays.
 89. Build a pipe that converts camelCase or PascalCase strings into human-readable sentences with spaces.
 90. Build a pipe that converts a string to title case, where the first letter of each word is capitalized.
+91. Build a pipe that handles pluralization of words based on the count provided. It can change “item” to “items”.
