@@ -1,5 +1,23 @@
 <app-container
   [title]="
+    'Pipe - Build a pipe that displays timestamps in a relative format, like “just now,” “a few minutes ago,” or “yesterday'
+  "
+>
+  <p>{{ 1330210800000 | relativeTime }}</p>
+  <!-- Example: "just now," "a few minutes ago," "yesterday," etc. -->
+</app-container>
+
+<app-container
+  [title]="
+    'Pipe - Build a pipe that converts a string into a URL-friendly format, replacing spaces with hyphens and removing special characters'
+  "
+>
+  <p>{{ "This is a URL-friendly title!" | urlify }}</p>
+  <!-- Output: "this-is-a-url-friendly-title" -->
+</app-container>
+
+<app-container
+  [title]="
     'Pipe - Build a pipe that converts a number into its corresponding ordinal representation (e.g., 1st, 2nd, 3rd, 4th, etc.)'
   "
 >

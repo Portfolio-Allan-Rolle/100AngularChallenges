@@ -24,10 +24,14 @@ import { PluralizePipe } from '../../pipes/pluralize.pipe';
 import { JsonPrettyPrintPipe } from '../../pipes/json-pretty-print.pipe';
 import { PasswordStrengthPipe } from '../../pipes/password-strength.pipe';
 import { OrdinalNumberPipe } from '../../pipes/ordinal-number.pipe';
+import { URLifyPipe } from '../../pipes/url-ify.pipe';
+import { RelativeTimePipe } from '../../pipes/relative-time.pipe';
 
 @Component({
   selector: 'app-pipes-documentation',
   imports: [
+    RelativeTimePipe,
+    URLifyPipe,
     OrdinalNumberPipe,
     PasswordStrengthPipe,
     JsonPrettyPrintPipe,
